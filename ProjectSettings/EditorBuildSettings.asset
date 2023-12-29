@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/CollectRanking.unity
+    guid: 87ed6e314d40bdc4a88ff7dbbb070135
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/FirstDisplay.unity
+    guid: 9a0016f3bceae8c40b6e1cba5794755e
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/Main.unity
+    guid: db2facafe22dd554997b2b0981180beb
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/ShowRanking.unity
+    guid: faadc3258eb88e547941603f25fa03b9
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/Title.unity
+    guid: 516fcd1bb19fd18419e0218177a934ff
+  - enabled: 1
+    path: Assets/TwoBalls/Scenes/Game/TutorialScene.unity
+    guid: 492db34ebeaf8084288fff3b4162c597
   m_configObjects: {}
