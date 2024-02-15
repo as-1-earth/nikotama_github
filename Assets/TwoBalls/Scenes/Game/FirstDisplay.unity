@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -908,7 +908,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1063556057
 PrefabInstance:
@@ -1174,72 +1174,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2df80ed16e557c44be1ca4c7dad9bbc, type: 3}
---- !u!1 &1399246394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1399246397}
-  - component: {fileID: 1399246396}
-  - component: {fileID: 1399246395}
-  m_Layer: 0
-  m_Name: EventSystem (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1399246395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399246394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1399246396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399246394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1399246397
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399246394}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416542552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,11 +1202,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1416542552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af1925fffd11aa47b141b4909b8dcfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cbf0955a5cd6a146b1b5b3913ca691a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBallTemp: []
-  speedLane: 1
+  cameraDistans: 10
 --- !u!81 &1416542554
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1336,7 +1269,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578425449
 GameObject:
@@ -1570,40 +1503,6 @@ MonoBehaviour:
   - {fileID: 604570984}
   - {fileID: 1157923438}
   userSpeedZTemp: 15
-  InfoRequestParams:
-    GetCharacterInventories: 1
-    GetCharacterList: 0
-    GetPlayerProfile: 0
-    GetPlayerStatistics: 0
-    GetTitleData: 0
-    GetUserAccountInfo: 0
-    GetUserData: 0
-    GetUserInventory: 0
-    GetUserReadOnlyData: 0
-    GetUserVirtualCurrency: 0
-    PlayerStatisticNames: []
-    ProfileConstraints:
-      ShowAvatarUrl: 0
-      ShowBannedUntil: 0
-      ShowCampaignAttributions: 0
-      ShowContactEmailAddresses: 0
-      ShowCreated: 0
-      ShowDisplayName: 0
-      ShowExperimentVariants: 0
-      ShowLastLogin: 0
-      ShowLinkedAccounts: 0
-      ShowLocations: 0
-      ShowMemberships: 0
-      ShowOrigination: 0
-      ShowPushNotificationRegistrations: 0
-      ShowStatistics: 0
-      ShowTags: 0
-      ShowTotalValueToDateInUsd: 0
-      ShowValuesToDate: 0
-    TitleDataKeys:
-    - awawawa
-    UserDataKeys: []
-    UserReadOnlyDataKeys: []
 --- !u!4 &1731549052
 Transform:
   m_ObjectHideFlags: 0
@@ -1618,7 +1517,7 @@ Transform:
   - {fileID: 604570984}
   - {fileID: 1157923438}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794376009
 GameObject:
