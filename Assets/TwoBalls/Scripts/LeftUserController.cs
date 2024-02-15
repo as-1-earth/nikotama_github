@@ -10,7 +10,7 @@ public class LeftUserController : MonoBehaviour
     public static Transform[] leftBall;
 
     /*レーン関連の値*/
-        /*レーンの移動スピード*/
+    /*レーンの移動スピード*/
     public float speedLane;
 
     // Start is called before the first frame update
@@ -87,11 +87,19 @@ public class LeftUserController : MonoBehaviour
         }
     
         /*もしUserが壁に当たっていなければZ軸を進める*/
-        if (!UserController.userStop) transform.position = new Vector3(
-            transform.position.x,
-            transform.position.y,
-            transform.position.z + ( Time.deltaTime * UserController.userSpeedZ)
-        );
+        if (!UserController.userStop)
+        {
+            /*
+             ここ
+             transform.position.z += ( Time.deltaTime * UserController.userSpeedZ);
+             で良くないすか
+             */
+            transform.position = new Vector3(
+                x: transform.position.x,
+                y: transform.position.y,
+                z: transform.position.z + ( Time.deltaTime * UserController.userSpeedZ)
+            );;
+        }
     }
 
     /*UserがWallに当たった時の処理*/

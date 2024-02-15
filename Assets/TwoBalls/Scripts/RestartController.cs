@@ -28,7 +28,6 @@ public class RestartController : MonoBehaviour
         /*ResultUIをアクティブ化*/
         UIController.ResultUI.SetActive(false);
 
-
         UserController.user[0].position = new Vector3(
             LeftUserController.leftBall[1].position.x,
             LeftUserController.leftBall[1].position.y,
