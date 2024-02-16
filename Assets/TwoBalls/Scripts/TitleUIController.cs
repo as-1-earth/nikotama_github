@@ -92,4 +92,9 @@ public class TitleUIController : MonoBehaviour
         PlayerPrefs.SetString("Level", "ex");
         SceneManager.LoadScene("ShowRanking");
     }
+
+    public void OnTapToStart()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
