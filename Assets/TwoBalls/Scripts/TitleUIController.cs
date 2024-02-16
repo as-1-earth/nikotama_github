@@ -38,7 +38,7 @@ public class TitleUIController : MonoBehaviour
     public void OnEasyButton()
     {
         PlayerPrefs.SetString("Level", "easy");
-        PlayerPrefs.SetInt("SpeedZ", 15);
+        PlayerPrefs.SetInt("SpeedZ", 20);
         ChangeToMain();
     }
     public void OnNormalButton()
