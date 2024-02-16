@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="oka">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="Tap To Startを作成" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,11 +18,25 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "as-1-earth"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c7fd1cd8-4800-40aa-b187-8c4c779d6f9e" />
+        <option name="url" value="https://github.com/as-1-earth/nikotama_github.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/LeftUserController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/RestartController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -115,7 +126,7 @@
       <updated>1708035187120</updated>
       <workItem from="1708035189470" duration="1232000" />
       <workItem from="1708036510335" duration="3713000" />
-      <workItem from="1708064063584" duration="365000" />
+      <workItem from="1708064063584" duration="968000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -189,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708064180539</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tap To Startを作成">
+      <option name="closed" value="true" />
+      <created>1708064622377</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708064622377</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +228,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/dev/dev1" />
+                        <option value="dev/test" />
                       </list>
                     </value>
                   </entry>
@@ -232,7 +251,8 @@
     <MESSAGE value="[dev/dev1]&#10;バグ修正&#10;・LeftUserController.csがメインカメラでも呼ばれていることによるエラーをメインカメラのコンポーネントの削除によって修正&#10;・EventSystemオブジェクトが二つあることによる警告をEventSystem(1)を削除して修正" />
     <MESSAGE value="asｄ" />
     <MESSAGE value="oka" />
-    <option name="LAST_COMMIT_MESSAGE" value="oka" />
+    <MESSAGE value="Tap To Startを作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tap To Startを作成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
