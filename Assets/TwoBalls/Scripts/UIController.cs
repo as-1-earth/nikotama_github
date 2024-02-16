@@ -147,7 +147,7 @@ public class UIController : MonoBehaviour
             resultScoreText.text = CalcScore() + "m";
 
             /*その時のスピードをTextに表示*/
-            SpeedZUI.text = $"最終的なスピード\n{UserController.userSpeedZ}";
+            /*SpeedZUI.text = $"最終的なスピード\n{UserController.userSpeedZ}";*/
 
             /*BestScoreの設定*/
             /*もし結果がHighScoreより高ければ*/

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="Tap To Startを作成" />
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Title.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
@@ -126,7 +132,7 @@
       <updated>1708035187120</updated>
       <workItem from="1708035189470" duration="1232000" />
       <workItem from="1708036510335" duration="3713000" />
-      <workItem from="1708064063584" duration="968000" />
+      <workItem from="1708064063584" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -208,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708064622377</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="タイトルＵＩ変更">
+      <option name="closed" value="true" />
+      <created>1708065057102</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708065057102</updated>
+    </task>
+    <task id="LOCAL-00012" summary="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更">
+      <option name="closed" value="true" />
+      <created>1708065168088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708065168088</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +240,21 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -228,7 +265,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev/test" />
+                        <option value="origin/dev/test" />
                       </list>
                     </value>
                   </entry>
@@ -252,7 +289,9 @@
     <MESSAGE value="asｄ" />
     <MESSAGE value="oka" />
     <MESSAGE value="Tap To Startを作成" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tap To Startを作成" />
+    <MESSAGE value="タイトルＵＩ変更" />
+    <MESSAGE value="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
