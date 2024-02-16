@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="各シーンに音楽を追加" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Title.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -132,7 +129,7 @@
       <updated>1708035187120</updated>
       <workItem from="1708035189470" duration="1232000" />
       <workItem from="1708036510335" duration="3713000" />
-      <workItem from="1708064063584" duration="1785000" />
+      <workItem from="1708064063584" duration="2567000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -230,7 +227,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708065168088</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="MainシーンのUIを変更">
+      <option name="closed" value="true" />
+      <created>1708065882845</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708065882845</updated>
+    </task>
+    <task id="LOCAL-00014" summary="音楽のアセットを追加">
+      <option name="closed" value="true" />
+      <created>1708065995931</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708065995931</updated>
+    </task>
+    <task id="LOCAL-00015" summary="各シーンに音楽を追加">
+      <option name="closed" value="true" />
+      <created>1708066673552</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708066673552</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +312,10 @@
     <MESSAGE value="Tap To Startを作成" />
     <MESSAGE value="タイトルＵＩ変更" />
     <MESSAGE value="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更" />
-    <option name="LAST_COMMIT_MESSAGE" value="途中からスタートで進まない(0除算)をなくすためにEasyのスピードを20に変更" />
+    <MESSAGE value="MainシーンのUIを変更" />
+    <MESSAGE value="音楽のアセットを追加" />
+    <MESSAGE value="各シーンに音楽を追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="各シーンに音楽を追加" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
