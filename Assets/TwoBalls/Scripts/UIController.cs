@@ -11,42 +11,42 @@ using Unity.Collections;
 
 public class UIController : MonoBehaviour
 {
-    /*ƒQ[ƒ€’†‚ÌUser‚ªg‚¤UI*/
+    /*ï¿½Qï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Userï¿½ï¿½ï¿½gï¿½ï¿½UI*/
     [SerializeField]
     private GameObject UserUITemp;
     public static GameObject UserUI;
 
-    /*Œ‹‰Ê‚ğ•\¦‚·‚é‚Æ‚«‚ÌUI*/
+    /*ï¿½ï¿½ï¿½Ê‚ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½UI*/
     [SerializeField]
     private GameObject ResultUITemp;
     public static GameObject ResultUI;
 
-    /*Œ‹‰Ê‚ğ•\¦‚·‚é‚Æ‚«‚ÌUI*/
+    /*ï¿½ï¿½ï¿½Ê‚ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½UI*/
     [SerializeField]
     private GameObject PauseUITemp;
     public static GameObject PauseUI;
     
-    /*User‚ğ’u‚­”z—ñ*/
+    /*Userï¿½ï¿½uï¿½ï¿½ï¿½zï¿½ï¿½*/
     public GameObject[] User;
 
-    /*Text‚Ì•Ï”*/
-        /*ƒQ[ƒ€’†•\¦‚³‚ê‚éScore‚ÌText*/
+    /*Textï¿½Ì•Ïï¿½*/
+        /*ï¿½Qï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Scoreï¿½ï¿½Text*/
     public Text scoreText;
-        /*Œ‹‰Ê‰æ–Ê‚ÌUI*/
+        /*ï¿½ï¿½ï¿½Ê‰ï¿½Ê‚ï¿½UI*/
     public Text resultScoreText;
-        /*ƒxƒXƒgƒXƒRƒA‚ÌText*/
+        /*ï¿½xï¿½Xï¿½gï¿½Xï¿½Rï¿½Aï¿½ï¿½Text*/
     public Text bestScoreText;
-        /*speed‚ğ•\¦‚·‚éText*/
+        /*speedï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Text*/
     public Text speedUI;
-        /*‚»‚Ì‚ÌƒXƒs[ƒh‚ğ•\¦‚·‚éText*/
+        /*ï¿½ï¿½ï¿½Ìï¿½ï¿½ÌƒXï¿½sï¿½[ï¿½hï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Text*/
     public Text SpeedZUI;
-        /*ƒvƒŒƒC‰æ–Ê‚ÉƒXƒs[ƒh‚ğ•\¦‚·‚éUI*/
+        /*ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½Ê‚ÉƒXï¿½sï¿½[ï¿½hï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UI*/
     public Text playSpeedZUI;
-        /*ranking‚ğ•\¦‚·‚éText*/
+        /*rankingï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Text*/
     [SerializeField]
     private Text rankingTemp;
     public static Text ranking;
-        /*countDown‚ğ•\¦‚·‚éText*/
+        /*countDownï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Text*/
     [SerializeField]
     private GameObject PauseCountTextTemp;
     public static GameObject PauseCountText;
@@ -66,20 +66,20 @@ public class UIController : MonoBehaviour
 
         PauseCountText = PauseCountTextTemp;
 
-        /*ƒGƒ‰[‚ğÁ‚·‚½‚ß‚Ìˆ—*/
+        /*ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ìï¿½ï¿½ï¿½*/
         NativeLeakDetection.Mode = NativeLeakDetectionMode.EnabledWithStackTrace;
 
-        /*Å‰‚ÌUI‚ÌƒAƒNƒeƒBƒuİ’è*/
-            /*UserUI‚ğƒAƒNƒeƒBƒu‰»*/
+        /*ï¿½Åï¿½ï¿½ï¿½UIï¿½ÌƒAï¿½Nï¿½eï¿½Bï¿½uï¿½İ’ï¿½*/
+            /*UserUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
         UserUI.SetActive(true);
-            /*PauseCountText‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+            /*PauseCountTextï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
         PauseCountText.SetActive(false);
-            /*ResultUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+            /*ResultUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
         ResultUI.SetActive(false);
 
         PauseUI.SetActive(false);
         
-        /*userStop‚ğfalse‚É‚µ‚Ä“®‚¯‚é‚æ‚¤‚É‚·‚é*/
+        /*userStopï¿½ï¿½falseï¿½É‚ï¿½ï¿½Ä“ï¿½ï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½*/
         UserController.userStop = false;
 
         ranking = rankingTemp;
@@ -91,39 +91,39 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*ƒfƒoƒbƒO—p*/
-            /*‚à‚µEnterƒL[‚ğ“ü—Í‚³‚ê‚½‚çƒŠƒXƒ^[ƒg*/
+        /*ï¿½fï¿½oï¿½bï¿½Oï¿½p*/
+            /*ï¿½ï¿½ï¿½ï¿½Enterï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ê‚½ï¿½çƒŠï¿½Xï¿½^ï¿½[ï¿½g*/
         if (Input.GetKeyDown(KeyCode.Return)) OnRestartButtonClicked();
         
-        /*Œ»İ‚ÌƒXƒRƒA‚ğ‰æ–Êã‚É•\¦*/
+        /*ï¿½ï¿½ï¿½İ‚ÌƒXï¿½Rï¿½Aï¿½ï¿½ï¿½ï¿½Êï¿½É•\ï¿½ï¿½*/
         scoreText.text = "Score:" + CalcScore() + "m";
 
-        playSpeedZUI.text = UserController.userSpeedZ.ToString("000");
+        /*playSpeedZUI.text = UserController.userSpeedZ.ToString("000");*/
 
-        /*‚à‚µuserStop‚ªtrue(User‚ªáŠQ•¨‚É“–‚½‚Á‚½)‚È‚ç‚Î*/
+        /*ï¿½ï¿½ï¿½ï¿½userStopï¿½ï¿½true(Userï¿½ï¿½ï¿½ï¿½Qï¿½ï¿½ï¿½É“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½È‚ï¿½ï¿½*/
         if (UserController.userStop)
         {
-            /*ƒAƒNƒeƒBƒuİ’è‚ÌØ‚è‘Ö‚¦*/
-                /*UserUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+            /*ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½İ’ï¿½ÌØ‚ï¿½Ö‚ï¿½*/
+                /*UserUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
             UserUI.SetActive(false);
-                /*ResultUI‚ğƒAƒNƒeƒBƒu‰»*/
+                /*ResultUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
             ResultUI.SetActive(true);
 
             if (PauseUI.activeSelf)
             {
-                /*UserUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+                /*UserUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
                 UserUI.SetActive(false);
-                /*ResultUI‚ğƒAƒNƒeƒBƒu‰»*/
+                /*ResultUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
                 ResultUI.SetActive(false);
             }
 
             if (PauseCountText.activeSelf)
             {
-                /*UserUI‚ğƒAƒNƒeƒBƒu‰»*/
+                /*UserUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
                 UserUI.SetActive(true);
-                /*ResultUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+                /*ResultUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
                 ResultUI.SetActive(false);
-                /*PauseUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+                /*PauseUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
                 PauseUI.SetActive(false);
 
                 countDown -= Time.deltaTime;
@@ -140,22 +140,22 @@ public class UIController : MonoBehaviour
                 }
             }
 
-            /*speedUI‚Ìtext‚É‹L‰¯‚³‚¹‚½SpeedZ‚É‘‚­*/
-            speedUI.text = PlayerPrefs.GetInt("SpeedZ").ToString("000");
+            /*speedUIï¿½ï¿½textï¿½É‹Lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SpeedZï¿½Éï¿½ï¿½ï¿½*/
+            /*speedUI.text = PlayerPrefs.GetInt("SpeedZ").ToString("000");*/
 
-            /*Œ‹‰Ê‚ÌƒXƒRƒA‚ğText‚É•\¦*/
+            /*ï¿½ï¿½ï¿½Ê‚ÌƒXï¿½Rï¿½Aï¿½ï¿½Textï¿½É•\ï¿½ï¿½*/
             resultScoreText.text = CalcScore() + "m";
 
-            /*‚»‚Ì‚ÌƒXƒs[ƒh‚ğText‚É•\¦*/
-            /*SpeedZUI.text = $"ÅI“I‚ÈƒXƒs[ƒh\n{UserController.userSpeedZ}";*/
+            /*ï¿½ï¿½ï¿½Ìï¿½ï¿½ÌƒXï¿½sï¿½[ï¿½hï¿½ï¿½Textï¿½É•\ï¿½ï¿½*/
+            /*SpeedZUI.text = $"ï¿½ÅIï¿½Iï¿½ÈƒXï¿½sï¿½[ï¿½h\n{UserController.userSpeedZ}";*/
 
-            /*BestScore‚Ìİ’è*/
-            /*‚à‚µŒ‹‰Ê‚ªHighScore‚æ‚è‚‚¯‚ê‚Î*/
+            /*BestScoreï¿½Ìİ’ï¿½*/
+            /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê‚ï¿½HighScoreï¿½ï¿½è‚ï¿½ï¿½ï¿½ï¿½ï¿½*/
 
 
             HighScore(PlayerPrefs.GetString("Level"));
 
-            /*ƒxƒXƒgƒXƒRƒA‚ğText‚É•\¦*/
+            /*ï¿½xï¿½Xï¿½gï¿½Xï¿½Rï¿½Aï¿½ï¿½Textï¿½É•\ï¿½ï¿½*/
             bestScoreText.text = "Best:" + PlayerPrefs.GetInt(PlayerPrefs.GetString("Level")) + "m";
 
             /*if (playFabBool)
@@ -184,38 +184,38 @@ public class UIController : MonoBehaviour
 
         }
 
-        // ƒ}ƒEƒX‚Ì‰EƒNƒŠƒbƒN‚ÅƒcƒC[ƒg‰æ–Ê‚ğŠJ‚­ê‡
+        // ï¿½}ï¿½Eï¿½Xï¿½Ì‰Eï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½Åƒcï¿½Cï¿½[ï¿½gï¿½ï¿½Ê‚ï¿½ï¿½Jï¿½ï¿½ï¿½ê‡
 
 
     }
 
-    /*ƒz[ƒ€ƒ{ƒ^ƒ“‚ğƒNƒŠƒbƒN‚³‚ê‚½‚Ìˆ—*/
+    /*ï¿½zï¿½[ï¿½ï¿½ï¿½{ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½*/
     public void OnHomeButtonClicked()
     {
-        /*ƒAƒNƒeƒBƒuİ’è‚ÌØ‚è‘Ö‚¦*/
-            /*UserUI‚ğƒAƒNƒeƒBƒu‰»*/
+        /*ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½İ’ï¿½ÌØ‚ï¿½Ö‚ï¿½*/
+            /*UserUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
         UserUI.SetActive(true);
 
 
-            /*ResultUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+            /*ResultUIï¿½ï¿½ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½ï¿½*/
         ResultUI.SetActive(false);
 
-        /*TitleƒV[ƒ“‚ÉØ‚è‘Ö‚¦*/
+        /*Titleï¿½Vï¿½[ï¿½ï¿½ï¿½ÉØ‚ï¿½Ö‚ï¿½*/
         SceneManager.LoadScene("Title");
     }
 
-    /*Ä¶ƒ{ƒ^ƒ“(ƒŠƒXƒ^[ƒg)‚ğƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«*/
+    /*ï¿½Äï¿½ï¿½{ï¿½^ï¿½ï¿½(ï¿½ï¿½ï¿½Xï¿½^ï¿½[ï¿½g)ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½Æ‚ï¿½*/
     public void OnRestartButtonClicked()
     {
-        /*MainƒV[ƒ“(“¯‚¶ƒV[ƒ“)‚ÉØ‚è‘Ö‚¦*/
+        /*Mainï¿½Vï¿½[ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Vï¿½[ï¿½ï¿½)ï¿½ÉØ‚ï¿½Ö‚ï¿½*/
         TitleUIController.ChangeToMain();
         
     }
 
-    /*“_”‚ÌŒvZ*/
+    /*ï¿½_ï¿½ï¿½ï¿½ÌŒvï¿½Z*/
     public static int CalcScore()
     {
-        /*User(Left)‚ÌZ²‚ğ•Ô‚·*/
+        /*User(Left)ï¿½ï¿½Zï¿½ï¿½ï¿½ï¿½Ô‚ï¿½*/
         return (int)UserController.user[0].position.z;
     }
 
