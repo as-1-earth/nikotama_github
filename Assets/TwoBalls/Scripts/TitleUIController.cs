@@ -34,12 +34,12 @@ public class TitleUIController : MonoBehaviour
             lockNormal.SetActive(false);
         }
 
-        if (PlayerPrefs.GetInt("normal") >= 1000)
+        if (PlayerPrefs.GetInt("normal") >= 3000)
         {
             lockHard.SetActive(false);
         }
         
-        if (PlayerPrefs.GetInt("hard") >= 1000)
+        if (PlayerPrefs.GetInt("hard") >= 5000)
         {
             lockEX.SetActive(false);
         }
@@ -89,7 +89,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "NORMAL‚Å1000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
+        lockText.gameObject.GetComponent<Text>().text = "NORMAL‚Å3000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
         
     }
     
@@ -104,7 +104,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "HARD‚Å1000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
+        lockText.gameObject.GetComponent<Text>().text = "HARD‚Å5000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
     }
 
     public static void ChangeToMain()
