@@ -32,6 +32,8 @@ public class UIController : MonoBehaviour
     /*Text�̕ϐ�*/
         /*�Q�[�����\�������Score��Text*/
     public Text scoreText;
+
+    public Text LevelText;
         /*���ʉ�ʂ�UI*/
     public Text resultScoreText;
         /*�x�X�g�X�R�A��Text*/
@@ -143,9 +145,10 @@ public class UIController : MonoBehaviour
             /*speedUI��text�ɋL��������SpeedZ�ɏ���*/
             /*speedUI.text = PlayerPrefs.GetInt("SpeedZ").ToString("000");*/
 
+            LevelText.text = PlayerPrefs.GetString("Level");
+            
             /*���ʂ̃X�R�A��Text�ɕ\��*/
             resultScoreText.text = CalcScore() + "m";
-
             /*���̎��̃X�s�[�h��Text�ɕ\��*/
             /*SpeedZUI.text = $"�ŏI�I�ȃX�s�[�h\n{UserController.userSpeedZ}";*/
 

@@ -29,17 +29,17 @@ public class TitleUIController : MonoBehaviour
         
         lockText.SetActive(false);
 
-        if (PlayerPrefs.GetInt("easy") >= 1000)
+        if (PlayerPrefs.GetInt("EASY") >= 1000)
         {
             lockNormal.SetActive(false);
         }
 
-        if (PlayerPrefs.GetInt("normal") >= 3000)
+        if (PlayerPrefs.GetInt("NORMAL") >= 3000)
         {
             lockHard.SetActive(false);
         }
         
-        if (PlayerPrefs.GetInt("hard") >= 5000)
+        if (PlayerPrefs.GetInt("HARD") >= 5000)
         {
             lockEX.SetActive(false);
         }
@@ -60,13 +60,13 @@ public class TitleUIController : MonoBehaviour
 
     public void OnEasyButton()
     {
-        PlayerPrefs.SetString("Level", "easy");
+        PlayerPrefs.SetString("Level", "EASY");
         PlayerPrefs.SetInt("SpeedZ", 20);
         ChangeToMain();
     }
     public void OnNormalButton()
     {
-        PlayerPrefs.SetString("Level", "normal");
+        PlayerPrefs.SetString("Level", "NORMAL");
         PlayerPrefs.SetInt("SpeedZ", 30);
         ChangeToMain();
     }
@@ -80,7 +80,7 @@ public class TitleUIController : MonoBehaviour
     
     public void OnHardButton()
     {
-        PlayerPrefs.SetString("Level", "hard");
+        PlayerPrefs.SetString("Level", "HARD");
         PlayerPrefs.SetInt("SpeedZ", 45);
         ChangeToMain();
     }
@@ -95,7 +95,7 @@ public class TitleUIController : MonoBehaviour
     
     public void OnEXButton()
     {
-        PlayerPrefs.SetString("Level", "ex");
+        PlayerPrefs.SetString("Level", "EX");
         PlayerPrefs.SetInt("SpeedZ", 60);
         ChangeToMain();
     }
@@ -121,22 +121,22 @@ public class TitleUIController : MonoBehaviour
 
     public void OnShowEasyButton()
     {
-        PlayerPrefs.SetString("Level", "easy");
+        PlayerPrefs.SetString("Level", "EASY");
         SceneManager.LoadScene("ShowRanking");
     }
     public void OnShowNormalButton()
     {
-        PlayerPrefs.SetString("Level", "normal");
+        PlayerPrefs.SetString("Level", "NORMAL");
         SceneManager.LoadScene("ShowRanking");
     }
     public void OnShowHardButton()
     {
-        PlayerPrefs.SetString("Level", "hard");
+        PlayerPrefs.SetString("Level", "HARD");
         SceneManager.LoadScene("ShowRanking");
     }
     public void OnShowEXButton()
     {
-        PlayerPrefs.SetString("Level", "ex");
+        PlayerPrefs.SetString("Level", "EX");
         SceneManager.LoadScene("ShowRanking");
     }
 
