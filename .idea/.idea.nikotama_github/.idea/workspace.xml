@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="各シーンに音楽を追加">
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="MainUIの左上のスピード表示を削除">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +38,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Title.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scripts/TitleUIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/nikotama_github/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -134,7 +132,7 @@
       <workItem from="1708035189470" duration="1232000" />
       <workItem from="1708036510335" duration="3713000" />
       <workItem from="1708064063584" duration="2567000" />
-      <workItem from="1708145386196" duration="620000" />
+      <workItem from="1708145386196" duration="5622000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -256,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708066673552</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="MainUIの左上のスピード表示を削除">
+      <option name="closed" value="true" />
+      <created>1708146320366</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708146320366</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +326,8 @@
     <MESSAGE value="MainシーンのUIを変更" />
     <MESSAGE value="音楽のアセットを追加" />
     <MESSAGE value="各シーンに音楽を追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="各シーンに音楽を追加" />
+    <MESSAGE value="MainUIの左上のスピード表示を削除" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainUIの左上のスピード表示を削除" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

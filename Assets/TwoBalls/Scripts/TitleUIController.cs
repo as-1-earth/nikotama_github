@@ -8,11 +8,16 @@ using System;/*
 using PlayFab;
 using PlayFab.ClientModels;*/
 using Unity.Collections;
+using UnityEngine.Serialization;
 
 public class TitleUIController : MonoBehaviour
 {
     /*name‚ª“ü—Í‚³‚ê‚½Text*/
     public InputField userName;
+    public GameObject lockText;
+    public GameObject lockNormal;
+    public GameObject lockHard;
+    public GameObject lockEX;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +26,24 @@ public class TitleUIController : MonoBehaviour
         {
             userName.text = PlayerPrefs.GetString("userName");
         }
+        
+        lockText.SetActive(false);
+
+        if (PlayerPrefs.GetInt("easy") >= 1000)
+        {
+            lockNormal.SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("normal") >= 1000)
+        {
+            lockHard.SetActive(false);
+        }
+        
+        if (PlayerPrefs.GetInt("hard") >= 1000)
+        {
+            lockEX.SetActive(false);
+        }
+        
     }
 
     // Update is called once per frame
@@ -47,17 +70,41 @@ public class TitleUIController : MonoBehaviour
         PlayerPrefs.SetInt("SpeedZ", 30);
         ChangeToMain();
     }
+
+    public void OnNormalErrorButton()
+    {
+        lockText.SetActive(true);
+
+        lockText.gameObject.GetComponent<Text>().text = "EASY‚Å1000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
+    }
+    
     public void OnHardButton()
     {
         PlayerPrefs.SetString("Level", "hard");
         PlayerPrefs.SetInt("SpeedZ", 45);
         ChangeToMain();
     }
+    
+    public void OnHardErrorButton()
+    {
+        lockText.SetActive(true);
+
+        lockText.gameObject.GetComponent<Text>().text = "NORMAL‚Å1000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
+        
+    }
+    
     public void OnEXButton()
     {
         PlayerPrefs.SetString("Level", "ex");
         PlayerPrefs.SetInt("SpeedZ", 60);
         ChangeToMain();
+    }
+    
+    public void OnEXErrorButton()
+    {
+        lockText.SetActive(true);
+
+        lockText.gameObject.GetComponent<Text>().text = "HARD‚Å1000m‚ð’´‚¦‚È‚¢‚Æ‰ð•ú‚³‚ê‚Ü‚¹‚ñ";
     }
 
     public static void ChangeToMain()
