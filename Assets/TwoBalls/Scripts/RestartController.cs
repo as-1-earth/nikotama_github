@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class RestartController : MonoBehaviour
 {
-    public GameObject newStage;
+    [SerializeField]
+    private GameObject newStageTemp;
+    public static GameObject newStage;
 
     // Start is called before the first frame update
     void Start()

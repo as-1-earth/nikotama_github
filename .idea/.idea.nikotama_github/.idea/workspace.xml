@@ -4,11 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="ロック解除の難易度調整">
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="Reward広告のエラーを修正中">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.IOSResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.IOSResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.JarResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.JarResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.PackageManagerResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.PackageManagerResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.VersionHandlerImpl.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.177/Google.VersionHandlerImpl.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.177_manifest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.177_manifest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.177_manifest.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.177_manifest.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/packaging_options.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/packaging_options.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/packaging_options.gradle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/packaging_options.gradle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/validate_dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/validate_dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/validate_dependencies.gradle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/validate_dependencies.gradle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +70,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/e2b68bb292014d74b37b5846e050d7f58800/84/ebc59a0a/02000014.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e2b68bb292014d74b37b5846e050d7f58800/f1/e9bd5b92/RewardedAd.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e2b68bb292014d74b37b5846e050d7f58800/f5/f7d2304b/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -280,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708194088305</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="LevelをUI上に表示">
+      <option name="closed" value="true" />
+      <created>1708195759198</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708195759198</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +390,9 @@
     <MESSAGE value="広告エラー" />
     <MESSAGE value="広告削除" />
     <MESSAGE value="ロック解除の難易度調整" />
-    <option name="LAST_COMMIT_MESSAGE" value="ロック解除の難易度調整" />
+    <MESSAGE value="LevelをUI上に表示" />
+    <MESSAGE value="Reward広告のエラーを修正中" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reward広告のエラーを修正中" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
