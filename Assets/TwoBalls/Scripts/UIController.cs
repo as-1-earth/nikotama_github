@@ -93,7 +93,7 @@ public class UIController : MonoBehaviour
             /*ResultUI���A�N�e�B�u��*/
         ResultUI.SetActive(false);
 
-        PauseUI.SetActive(false);
+        RestartUI.SetActive(false);
         
         /*userStop��false�ɂ��ē�����悤�ɂ���*/
         UserController.userStop = false;
@@ -102,6 +102,7 @@ public class UIController : MonoBehaviour
 
         Debug.Log(PlayerPrefs.GetString("Level"));
 
+        PlayerPrefs.SetString("Restart", "true");
     }
 
     // Update is called once per frame
@@ -122,11 +123,30 @@ public class UIController : MonoBehaviour
             /*�A�N�e�B�u�ݒ�̐؂�ւ�*/
                 /*UserUI���A�N�e�B�u��*/
             UserUI.SetActive(false);
-                /*ResultUI���A�N�e�B�u��*/
-            ResultUI.SetActive(true);
 
-            
-            
+            Debug.Log(PlayerPrefs.GetString("Restart"));
+            if (PlayerPrefs.GetString("Restart")=="true")
+            {
+                RestartUI.SetActive(true);
+                
+                RestartCountDown -= Time.deltaTime;
+
+                int restartCountDownText = (int)RestartCountDown;
+
+                RestartCountText.gameObject.GetComponent<Text>().text = restartCountDownText.ToString();
+
+                if(restartCountDownText == 0)
+                {
+                    countDown = 11.0;
+                    OnCloseButton();
+                }
+            }
+            else
+            {
+                    /*ResultUI���A�N�e�B�u��*/
+                ResultUI.SetActive(true);
+            }
+
             if (PauseUI.activeSelf)
             {
                 /*UserUI���A�N�e�B�u��*/
@@ -244,6 +264,13 @@ public class UIController : MonoBehaviour
         {
             PlayerPrefs.SetInt(level, CalcScore());
         }
+    }
+
+    public void OnCloseButton()
+    {
+        RestartUI.SetActive(false);
+        ResultUI.SetActive(true);
+        PlayerPrefs.SetString("Restart", "false");
     }
 
 }

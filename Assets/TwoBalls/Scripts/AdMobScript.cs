@@ -150,6 +150,8 @@ public class AdMobScript : MonoBehaviour
         string type = args.Type;
         double amount = args.Amount;
         Debug.Log(amount.ToString() + " " + type );*/
+        UIController.RestartUI.SetActive(false);
+        PlayerPrefs.SetString("Restart", "false");
         RestartController.Restart(RewardStage);
     }
 }
