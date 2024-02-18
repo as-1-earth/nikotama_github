@@ -24,8 +24,7 @@ public class UserController : MonoBehaviour
 
     bool speedUpCheck = true;
 
-/*    [SerializeField] GetPlayerCombinedInfoRequestParams InfoRequestParams;
-*/
+/*    [SerializeField] GetPlayerCombinedInfoRequestParams InfoRequestParams;*/
     // Start is called before the first frame update
     void Start()
     {

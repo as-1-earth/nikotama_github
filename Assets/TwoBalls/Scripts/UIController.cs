@@ -26,6 +26,10 @@ public class UIController : MonoBehaviour
     private GameObject PauseUITemp;
     public static GameObject PauseUI;
     
+    [SerializeField]
+    private GameObject RestartUITemp;
+    public static GameObject RestartUI;
+    
     /*User��u���z��*/
     public GameObject[] User;
 
@@ -53,8 +57,14 @@ public class UIController : MonoBehaviour
     private GameObject PauseCountTextTemp;
     public static GameObject PauseCountText;
 
+[SerializeField]
+    private GameObject RestartCountTextTemp;
+    public static GameObject RestartCountText;
+
 
     double countDown = 4.0f;
+    
+    double RestartCountDown = 11.0f;
 
     
     // Start is called before the first frame update
@@ -64,10 +74,14 @@ public class UIController : MonoBehaviour
 
         ResultUI = ResultUITemp;
 
+        RestartUI = RestartUITemp;
+        
         PauseUI = PauseUITemp;
 
         PauseCountText = PauseCountTextTemp;
 
+        RestartCountText = RestartCountTextTemp;
+        
         /*�G���[���������߂̏���*/
         NativeLeakDetection.Mode = NativeLeakDetectionMode.EnabledWithStackTrace;
 
@@ -111,6 +125,8 @@ public class UIController : MonoBehaviour
                 /*ResultUI���A�N�e�B�u��*/
             ResultUI.SetActive(true);
 
+            
+            
             if (PauseUI.activeSelf)
             {
                 /*UserUI���A�N�e�B�u��*/

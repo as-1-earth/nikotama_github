@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="Reward広告のエラーを修正中">
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="Reward広告完成">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/1024x768.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Unity/nikotama_github/Assets/TwoBalls/Scenes/Game/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -292,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708195759198</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Reward広告完成">
+      <option name="closed" value="true" />
+      <created>1708242909138</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708242909138</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +373,8 @@
     <MESSAGE value="ロック解除の難易度調整" />
     <MESSAGE value="LevelをUI上に表示" />
     <MESSAGE value="Reward広告のエラーを修正中" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reward広告のエラーを修正中" />
+    <MESSAGE value="Reward広告完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reward広告完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
