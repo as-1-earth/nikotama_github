@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class RestartController : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject newStageTemp;
-    public static GameObject newStage;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +16,7 @@ public class RestartController : MonoBehaviour
         
     }
 
-    public void Restart()
+    public static void Restart(GameObject newStage)
     {
         UserController.userStop = false;
 
@@ -45,6 +41,7 @@ public class RestartController : MonoBehaviour
 
         GameObject[] InstantiateStage = new GameObject[2];
 
+        Debug.Log(newStage);
         InstantiateStage[0] = Instantiate(newStage, new Vector3(0, 0, UserController.user[0].position.z), Quaternion.identity);
         InstantiateStage[1] = Instantiate(newStage, new Vector3(0, 0, UserController.user[0].position.z-StageGenerator.stageChipSize), Quaternion.identity);
 

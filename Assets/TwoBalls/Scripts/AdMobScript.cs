@@ -9,7 +9,7 @@ public class AdMobScript : MonoBehaviour
     private BannerView bannerView;
     private RewardedAd rewardedAd;
 
-    public RestartController restartController;
+    public GameObject RewardStage;
 
     public void Start()
     {
@@ -150,6 +150,6 @@ public class AdMobScript : MonoBehaviour
         string type = args.Type;
         double amount = args.Amount;
         Debug.Log(amount.ToString() + " " + type );*/
-        restartController.Restart();
+        RestartController.Restart(RewardStage);
     }
 }
