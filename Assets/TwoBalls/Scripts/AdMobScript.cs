@@ -24,9 +24,9 @@ public class AdMobScript : MonoBehaviour
     private void RequestBanner()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-5885349192863781~7135438692"; // ƒeƒXƒg—pLƒ†ƒjƒbƒgID
+        string adUnitId = "ca-app-pub-5885349192863781/5738403021"; // ãƒ†ã‚¹ãƒˆç”¨åºƒå‘Šãƒ¦ãƒ‹ãƒƒãƒˆID
 #elif UNITY_IPHONE
-    string adUnitId = "ca-app-pub-3940256099942544/2934735716"; // ƒeƒXƒg—pLƒ†ƒjƒbƒgID
+    string adUnitId = "ca-app-pub-3940256099942544/2934735716"; // ãƒ†ã‚¹ãƒˆç”¨åºƒå‘Šãƒ¦ãƒ‹ãƒƒãƒˆID
 #else
     string adUnitId = "unexpected_platform";
 #endif
@@ -42,7 +42,7 @@ public class AdMobScript : MonoBehaviour
 
     }
     
-    private InterstitialAd interstitial;
+    /*private InterstitialAd interstitial;
     public void loadInterstitialAd()
     {
 #if UNITY_ANDROID
@@ -90,13 +90,13 @@ public class AdMobScript : MonoBehaviour
         {
             Debug.Log("Interstitial Ad not load");
         }
-    }
+    }*/
     
     public void loadRewardAd()
     {
         string adUnitId;
 #if UNITY_ANDROID
-        adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        adUnitId = "ca-app-pub-5885349192863781/6125609357";
 #elif UNITY_IPHONE
     adUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else

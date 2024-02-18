@@ -12,7 +12,7 @@ using UnityEngine.Serialization;
 
 public class TitleUIController : MonoBehaviour
 {
-    /*name‚ª“ü—Í‚³‚ê‚½Text*/
+    /*nameãŒå…¥åŠ›ã•ã‚ŒãŸText*/
     public InputField userName;
     public GameObject lockText;
     public GameObject lockNormal;
@@ -75,7 +75,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "EASY‚Å1000m‚ğ’´‚¦‚È‚¢‚Æ‰ğ•ú‚³‚ê‚Ü‚¹‚ñ";
+        lockText.gameObject.GetComponent<Text>().text = "EASYã§1000mã‚’è¶…ãˆãªã„ã¨è§£æ”¾ã•ã‚Œã¾ã›ã‚“";
     }
     
     public void OnHardButton()
@@ -89,7 +89,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "NORMAL‚Å3000m‚ğ’´‚¦‚È‚¢‚Æ‰ğ•ú‚³‚ê‚Ü‚¹‚ñ";
+        lockText.gameObject.GetComponent<Text>().text = "NORMALã§3000mã‚’è¶…ãˆãªã„ã¨è§£æ”¾ã•ã‚Œã¾ã›ã‚“";
         
     }
     
@@ -104,7 +104,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "HARD‚Å5000m‚ğ’´‚¦‚È‚¢‚Æ‰ğ•ú‚³‚ê‚Ü‚¹‚ñ";
+        lockText.gameObject.GetComponent<Text>().text = "HARDã§5000mã‚’è¶…ãˆãªã„ã¨è§£æ”¾ã•ã‚Œã¾ã›ã‚“";
     }
 
     public static void ChangeToMain()

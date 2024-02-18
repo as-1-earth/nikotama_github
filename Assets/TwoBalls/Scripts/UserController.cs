@@ -8,16 +8,16 @@ using PlayFab.ClientModels;*/
 
 public class UserController : MonoBehaviour
 {
-    /*User‚ÌTransform‚ğæ“¾*/
-        /*0‚ªLeft,1‚ªRight*/
+    /*Userã®Transformã‚’å–å¾—*/
+        /*0ãŒLeft,1ãŒRight*/
     [SerializeField]
     private Transform[] userTemp;
     public static Transform[] user;
 
-    /*User‚ª~‚Ü‚Á‚½‚Étrue‚É‚È‚éboolŒ^•Ï”*/
+    /*UserãŒæ­¢ã¾ã£ãŸæ™‚ã«trueã«ãªã‚‹boolå‹å¤‰æ•°*/
     public static bool userStop = false;
 
-    /*User‚ÌƒXƒs[ƒh‚ğInspecterã‚Å‘€ì‚·‚é*/
+    /*Userã®ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’Inspecterä¸Šã§æ“ä½œã™ã‚‹*/
     [SerializeField]
     private int userSpeedZTemp;
     public static int userSpeedZ;
@@ -28,17 +28,17 @@ public class UserController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*user‚ğInspecterã‚Å‘€ì‚Å‚«‚é‚æ‚¤‚É‚·‚é‚½‚ß‚Ì‘€ì*/
+        /*userã‚’Inspecterä¸Šã§æ“ä½œã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã®æ“ä½œ*/
         user = userTemp;
 
-        /*userSpeedZ‚Ì’l‚ğSpeedZ‚É‹L‰¯‚³‚¹‚é*/
+        /*userSpeedZã®å€¤ã‚’SpeedZã«è¨˜æ†¶ã•ã›ã‚‹*/
         userSpeedZ = PlayerPrefs.GetInt("SpeedZ");
 
         /* PlayerPrefs.SetInt("SpeedZ", 15);*/
 
 /*
         
-        PlayFabAuthService.Instance.InfoRequestParams = InfoRequestParams; // ‚±‚±‚ğ’Ç‰Á!!
+        PlayFabAuthService.Instance.InfoRequestParams = InfoRequestParams; // ã“ã“ã‚’è¿½åŠ !!
         PlayFabAuthService.OnLoginSuccess += PlayFabLogin_OnLoginSuccess;
         PlayFabAuthService.Instance.Authenticate(Authtypes.Silent);
 */
@@ -80,55 +80,55 @@ public class UserController : MonoBehaviour
 
     }
 
-    /*User‚ÌPosition‚ğŠÖ”‚ÅŒvZ*/
-        /*ˆø”F‰æ–Ê‚ğƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚éêŠ, Z²‚ğˆÚ“®‚·‚éƒXƒs[ƒh, ƒ{[ƒ‹‚ÌTransform, ƒ†[ƒU[‚ÌTransform*/
+    /*Userã®Positionã‚’é–¢æ•°ã§è¨ˆç®—*/
+        /*å¼•æ•°ï¼šç”»é¢ã‚’ã‚¿ãƒƒãƒã•ã‚Œã¦ã„ã‚‹å ´æ‰€, Zè»¸ã‚’ç§»å‹•ã™ã‚‹ã‚¹ãƒ”ãƒ¼ãƒ‰, ãƒœãƒ¼ãƒ«ã®Transform, ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®Transform*/
     public static Vector3 UserTouchPosition(Vector3 touchPosition, Transform[] Ball, Transform user)
     {
-        /*‚à‚µUser‚ª~‚Ü‚Á‚½user‚Ìposition‚ğ‚»‚Ìê‚É‚Æ‚Ç‚ß‚éˆ—*/
+        /*ã‚‚ã—UserãŒæ­¢ã¾ã£ãŸæ™‚userã®positionã‚’ãã®å ´ã«ã¨ã©ã‚ã‚‹å‡¦ç†*/
         if (userStop) return user.position;
 
-        /*ƒ†[ƒU[‚Ìposition‚ğ¶‰E‚Ìƒ{[ƒ‹1‚Ìx,yÀ•W‚ÆŒ»İ‚ÌUser‚ÌZÀ•W‚ÉˆÚ“®*/
+        /*ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®positionã‚’å·¦å³ã®ãƒœãƒ¼ãƒ«1ã®x,yåº§æ¨™ã¨ç¾åœ¨ã®Userã®Zåº§æ¨™ã«ç§»å‹•*/
         user.position = new Vector3(Ball[1].position.x, Ball[1].position.y, user.position.z);
 
-        /*UserPosition‚ğUser‚ÌˆÊ’u‚É‰Šú‰»*/
+        /*UserPositionã‚’Userã®ä½ç½®ã«åˆæœŸåŒ–*/
         Vector3 userPosition = user.position;
 
-        /*x=a*y^2+q‚Ì“ñŸŠÖ”‚Æ‚µ‚Äa‚Æq‚ªˆÈ‰º‚Ì’è”*/
+        /*x=a*y^2+qã®äºŒæ¬¡é–¢æ•°ã¨ã—ã¦aã¨qãŒä»¥ä¸‹ã®å®šæ•°*/
         const float a = 1.85f / 10.24f;
         const float q = 3.7f;
 
-        /*touchPosition‚ÌZÀ•W‚Í­‚µ—£‚³‚È‚«‚á”½‰f‚³‚ê‚È‚¢H*/
+        /*touchPositionã®Zåº§æ¨™ã¯å°‘ã—é›¢ã•ãªãã‚ƒåæ˜ ã•ã‚Œãªã„ï¼Ÿ*/
         touchPosition.z = 10;
 
-        /*target‚ÍƒXƒNƒŠ[ƒ“‰æ–Ê‚ğƒ^ƒbƒ`‚³‚ê‚½êŠ‚ğworldÀ•W‚É•ÏŠ·‚µ‚½‚à‚Ì*/
+        /*targetã¯ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ç”»é¢ã‚’ã‚¿ãƒƒãƒã•ã‚ŒãŸå ´æ‰€ã‚’worldåº§æ¨™ã«å¤‰æ›ã—ãŸã‚‚ã®*/
         Vector3 target = Camera.main.ScreenToWorldPoint(touchPosition);
 
-        /*userPosition‚ÌyÀ•W‚ğã‰º‚Ìƒ{[ƒ‹ˆÈã‚É“®‚©‚¹‚È‚¢‚æ‚¤‚Éw’è*/
+        /*userPositionã®yåº§æ¨™ã‚’ä¸Šä¸‹ã®ãƒœãƒ¼ãƒ«ä»¥ä¸Šã«å‹•ã‹ã›ãªã„ã‚ˆã†ã«æŒ‡å®š*/
         userPosition.y = Mathf.Clamp(target.y, Ball[0].position.y, Ball[2].position.y);
 
-        /*‚à‚µƒ^ƒbƒ`‚³‚ê‚½êŠ‚ª‰æ–Êã‚Ì¶‘¤‚È‚ç*/
-            /*userPosition‚ÌXÀ•W‚ğx = a * y ^ 2 - q‚ğ—p‚¢‚ÄŒvZ*/
+        /*ã‚‚ã—ã‚¿ãƒƒãƒã•ã‚ŒãŸå ´æ‰€ãŒç”»é¢ä¸Šã®å·¦å´ãªã‚‰*/
+            /*userPositionã®Xåº§æ¨™ã‚’x = a * y ^ 2 - qã‚’ç”¨ã„ã¦è¨ˆç®—*/
         if (touchPosition.x < Screen.width / 2) userPosition.x = a * Mathf.Pow(userPosition.y, 2) - q;
 
-        /*‚à‚µƒ^ƒbƒ`‚³‚ê‚½êŠ‚ª‰æ–Êã‚Ì‰E‘¤‚È‚ç*/
-            /*userPosition‚ÌXÀ•W‚ğx = a * y ^ 2 + q‚ğ—p‚¢‚ÄŒvZ*/
+        /*ã‚‚ã—ã‚¿ãƒƒãƒã•ã‚ŒãŸå ´æ‰€ãŒç”»é¢ä¸Šã®å³å´ãªã‚‰*/
+            /*userPositionã®Xåº§æ¨™ã‚’x = a * y ^ 2 + qã‚’ç”¨ã„ã¦è¨ˆç®—*/
         if (touchPosition.x > Screen.width / 2) userPosition.x = -a * Mathf.Pow(userPosition.y, 2) + q;
 
-        /*ŠÔŒo‰ß‚É‚æ‚Á‚Äw’è‚³‚ê‚½ƒXƒs[ƒh‚ÅZ²‚ği‚Ş*/
+        /*æ™‚é–“çµŒéã«ã‚ˆã£ã¦æŒ‡å®šã•ã‚ŒãŸã‚¹ãƒ”ãƒ¼ãƒ‰ã§Zè»¸ã‚’é€²ã‚€*/
         userPosition.z = user.position.z;
 
-        /*UserPosition‚ğ•Ô‚·*/
+        /*UserPositionã‚’è¿”ã™*/
         return userPosition;
     }
     
-    /*userSpeedZ‚ğ1ƒvƒ‰ƒX‚µ‚Ä‹L‰¯‚³‚¹‚é©ìŠÖ”*/
+    /*userSpeedZã‚’1ãƒ—ãƒ©ã‚¹ã—ã¦è¨˜æ†¶ã•ã›ã‚‹è‡ªä½œé–¢æ•°*/
     public void OnPlaceButton()
     {
         userSpeedZ++;
         PlayerPrefs.SetInt("SpeedZ", userSpeedZ);
     }
 
-    /*userSpeedZ‚ğ1ƒ}ƒCƒiƒX‚µ‚Ä‹L‰¯‚³‚¹‚é©ìŠÖ”*/
+    /*userSpeedZã‚’1ãƒã‚¤ãƒŠã‚¹ã—ã¦è¨˜æ†¶ã•ã›ã‚‹è‡ªä½œé–¢æ•°*/
     public void OnMinusButton()
     {
         userSpeedZ--;

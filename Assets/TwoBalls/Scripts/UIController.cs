@@ -42,6 +42,11 @@ public class UIController : MonoBehaviour
     public Text resultScoreText;
         /*�x�X�g�X�R�A��Text*/
     public Text bestScoreText;
+        /*���ʉ�ʂ�UI*/
+    public Text restartResultScoreText;
+        /*�x�X�g�X�R�A��Text*/
+    public Text restartBestScoreText;
+    
         /*speed��\������Text*/
     public Text speedUI;
         /*���̎��̃X�s�[�h��\������Text*/
@@ -125,27 +130,7 @@ public class UIController : MonoBehaviour
             UserUI.SetActive(false);
 
             Debug.Log(PlayerPrefs.GetString("Restart"));
-            if (PlayerPrefs.GetString("Restart")=="true")
-            {
-                RestartUI.SetActive(true);
-                
-                RestartCountDown -= Time.deltaTime;
-
-                int restartCountDownText = (int)RestartCountDown;
-
-                RestartCountText.gameObject.GetComponent<Text>().text = restartCountDownText.ToString();
-
-                if(restartCountDownText == 0)
-                {
-                    countDown = 11.0;
-                    OnCloseButton();
-                }
-            }
-            else
-            {
-                    /*ResultUI���A�N�e�B�u��*/
-                ResultUI.SetActive(true);
-            }
+            
 
             if (PauseUI.activeSelf)
             {
@@ -163,6 +148,7 @@ public class UIController : MonoBehaviour
                 ResultUI.SetActive(false);
                 /*PauseUI���A�N�e�B�u��*/
                 PauseUI.SetActive(false);
+                
 
                 countDown -= Time.deltaTime;
 
@@ -197,6 +183,31 @@ public class UIController : MonoBehaviour
             /*�x�X�g�X�R�A��Text�ɕ\��*/
             bestScoreText.text = "Best:" + PlayerPrefs.GetInt(PlayerPrefs.GetString("Level")) + "m";
 
+            if (PlayerPrefs.GetString("Restart")=="true")
+            {
+                RestartUI.SetActive(true);
+                
+                RestartCountDown -= Time.deltaTime;
+
+                int restartCountDownText = (int)RestartCountDown;
+
+                RestartCountText.gameObject.GetComponent<Text>().text = restartCountDownText.ToString();
+                
+                restartResultScoreText.text = CalcScore() + "m";
+
+                restartBestScoreText.text = "Best:" + PlayerPrefs.GetInt(PlayerPrefs.GetString("Level")) + "m";
+
+                if(restartCountDownText == 0)
+                {
+                    countDown = 11.0;
+                    OnCloseButton();
+                }
+            }
+            else
+            {
+                /*ResultUI���A�N�e�B�u��*/
+                ResultUI.SetActive(true);
+            }
             /*if (playFabBool)
             {
                 PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest
