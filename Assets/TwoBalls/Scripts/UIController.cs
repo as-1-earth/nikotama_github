@@ -132,37 +132,6 @@ public class UIController : MonoBehaviour
             Debug.Log(PlayerPrefs.GetString("Restart"));
             
 
-            if (PauseUI.activeSelf)
-            {
-                /*UserUI���A�N�e�B�u��*/
-                UserUI.SetActive(false);
-                /*ResultUI���A�N�e�B�u��*/
-                ResultUI.SetActive(false);
-            }
-
-            if (PauseCountText.activeSelf)
-            {
-                /*UserUI���A�N�e�B�u��*/
-                UserUI.SetActive(true);
-                /*ResultUI���A�N�e�B�u��*/
-                ResultUI.SetActive(false);
-                /*PauseUI���A�N�e�B�u��*/
-                PauseUI.SetActive(false);
-                
-
-                countDown -= Time.deltaTime;
-
-                int countDownText = (int)countDown;
-
-                PauseCountText.gameObject.GetComponent<Text>().text = countDownText.ToString();
-
-                if(countDownText == 0)
-                {
-                    UserController.userStop = false;
-                    countDown = 4.0;
-                    PauseCountText.SetActive(false);
-                }
-            }
 
             /*speedUI��text�ɋL��������SpeedZ�ɏ���*/
             /*speedUI.text = PlayerPrefs.GetInt("SpeedZ").ToString("000");*/
@@ -183,7 +152,15 @@ public class UIController : MonoBehaviour
             /*�x�X�g�X�R�A��Text�ɕ\��*/
             bestScoreText.text = "Best:" + PlayerPrefs.GetInt(PlayerPrefs.GetString("Level")) + "m";
 
-            if (PlayerPrefs.GetString("Restart")=="true")
+            
+            
+            if (PauseUI.activeSelf)
+            {
+                /*UserUI���A�N�e�B�u��*/
+                UserUI.SetActive(false);
+                /*ResultUI���A�N�e�B�u��*/
+                ResultUI.SetActive(false);
+            }else  if (PlayerPrefs.GetString("Restart")=="true")
             {
                 RestartUI.SetActive(true);
                 
@@ -207,6 +184,33 @@ public class UIController : MonoBehaviour
             {
                 /*ResultUI���A�N�e�B�u��*/
                 ResultUI.SetActive(true);
+            }
+            
+            if (PauseCountText.activeSelf)
+            {
+                /*UserUI���A�N�e�B�u��*/
+                UserUI.SetActive(true);
+                /*ResultUI���A�N�e�B�u��*/
+                ResultUI.SetActive(false);
+                /*PauseUI���A�N�e�B�u��*/
+                PauseUI.SetActive(false);
+                
+                RestartUI.SetActive(false);
+                
+                
+
+                countDown -= Time.deltaTime;
+
+                int countDownText = (int)countDown;
+
+                PauseCountText.gameObject.GetComponent<Text>().text = countDownText.ToString();
+
+                if(countDownText == 0)
+                {
+                    UserController.userStop = false;
+                    countDown = 4.0;
+                    PauseCountText.SetActive(false);
+                }
             }
             /*if (playFabBool)
             {

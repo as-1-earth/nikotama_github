@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/shelf/2024_02_18_16_44______.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/shelf/2024_02_18_16_44______.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/baseProjectTemplate.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/baseProjectTemplate.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.6.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.6.0.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/AdMobScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RightUserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RightUserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,9 @@
       <workItem from="1708036510335" duration="3713000" />
       <workItem from="1708064063584" duration="2567000" />
       <workItem from="1708145386196" duration="6427000" />
-      <workItem from="1708291129928" duration="619000" />
+      <workItem from="1708291129928" duration="1896000" />
+      <workItem from="1708356651410" duration="1203000" />
+      <workItem from="1708363428137" duration="1298000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
