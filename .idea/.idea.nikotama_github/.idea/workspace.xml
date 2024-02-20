@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +128,7 @@
       <workItem from="1708035189470" duration="1232000" />
       <workItem from="1708036510335" duration="3713000" />
       <workItem from="1708064063584" duration="2567000" />
+      <workItem from="1708463259167" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -251,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708066673552</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="移す">
+      <option name="closed" value="true" />
+      <created>1708463281606</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708463281606</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +293,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/dev/test" />
+                        <option value="dev/testtest" />
                       </list>
                     </value>
                   </entry>
@@ -315,7 +322,8 @@
     <MESSAGE value="MainシーンのUIを変更" />
     <MESSAGE value="音楽のアセットを追加" />
     <MESSAGE value="各シーンに音楽を追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="各シーンに音楽を追加" />
+    <MESSAGE value="移す" />
+    <option name="LAST_COMMIT_MESSAGE" value="移す" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
