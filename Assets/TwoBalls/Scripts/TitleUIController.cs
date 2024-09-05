@@ -75,7 +75,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "EASYで1000mを超えないと解放されません";
+        lockText.gameObject.GetComponent<Text>().text = "Over 1000m in EASY";
     }
     
     public void OnHardButton()
@@ -89,7 +89,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "NORMALで3000mを超えないと解放されません";
+        lockText.gameObject.GetComponent<Text>().text = "Over 3000m in NORMAL";
         
     }
     
@@ -104,7 +104,7 @@ public class TitleUIController : MonoBehaviour
     {
         lockText.SetActive(true);
 
-        lockText.gameObject.GetComponent<Text>().text = "HARDで5000mを超えないと解放されません";
+        lockText.gameObject.GetComponent<Text>().text = "Over 5000m in HARD";
     }
 
     public static void ChangeToMain()

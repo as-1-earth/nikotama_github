@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class StageGenerator : MonoBehaviour
 {
-    /*ƒhƒA‚ÌƒXƒs[ƒh*/
+    /*ãƒ‰ã‚¢ã®ã‚¹ãƒ”ãƒ¼ãƒ‰*/
     public float speedDoor;
 
-    /*ƒXƒe[ƒWŠÖ˜A*/
-    /*ƒXƒe[ƒW‚Ì’·‚³*/
+    /*ã‚¹ãƒ†ãƒ¼ã‚¸é–¢é€£*/
+    /*ã‚¹ãƒ†ãƒ¼ã‚¸ã®é•·ã•*/
     [SerializeField]
     private int StageChipSizeTemp;
     public static int stageChipSize;
-        /*‚»‚Ì‚Ég—p‚µ‚Ä‚¢‚éƒXƒe[ƒW‚Ì”*/
+        /*ãã®æ™‚ã«ä½¿ç”¨ã—ã¦ã„ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®æ•°*/
     int currentChipIndex;
-        /*ŠJnˆÊ’u‚ÌStage‚ÌChip‚ÌIndex”Ô†*/
+        /*é–‹å§‹ä½ç½®ã®Stageã®Chipã®Indexç•ªå·*/
     public int startChipIndex;
-        /*¶¬‚µ‚Ä‚¨‚­ƒXƒe[ƒW‚Ì–‡”*/
+        /*ç”Ÿæˆã—ã¦ãŠãã‚¹ãƒ†ãƒ¼ã‚¸ã®æšæ•°*/
     public int preInstantiate;
-    /*Œ»İ¶¬‚³‚ê‚Ä‚¢‚éƒXƒe[ƒW‚ğ“ü‚ê‚éƒŠƒXƒg*/
+    /*ç¾åœ¨ç”Ÿæˆã•ã‚Œã¦ã„ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å…¥ã‚Œã‚‹ãƒªã‚¹ãƒˆ*/
     [SerializeField]
     private List<GameObject> generatedStageListTemp = new List<GameObject>();
     public static List<GameObject> generatedStageList = new List<GameObject>();
-        /*ƒXƒe[ƒW‚Æ•Ç‚Ì”z—ñ‚Í‘Î‰‚³‚¹‚é*/
-            /*•¡»‚·‚éƒXƒe[ƒW‚Ì”z—ñ*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ã¨å£ã®é…åˆ—ã¯å¯¾å¿œã•ã›ã‚‹*/
+            /*è¤‡è£½ã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®é…åˆ—*/
     public GameObject[] randomStageChips;
-            /*ƒXƒe[ƒW‚Ì•Ç‚ğ“ü‚ê‚é”z—ñ*/
+            /*ã‚¹ãƒ†ãƒ¼ã‚¸ã®å£ã‚’å…¥ã‚Œã‚‹é…åˆ—*/
     public GameObject[] stageWallChips;
-            /*ƒXƒe[ƒW‚Æ•Ç‚ğ‘Î‰‚³‚¹‚½Dictionary‚ğì¬*/
+            /*ã‚¹ãƒ†ãƒ¼ã‚¸ã¨å£ã‚’å¯¾å¿œã•ã›ãŸDictionaryã‚’ä½œæˆ*/
     public Dictionary<GameObject, GameObject> stageWallDictionary = new Dictionary<GameObject, GameObject>();
 
-    /*•Ç‚ÌêŠ‚ğ“ü‚ê‚é”z—ñ*/
-        /*¶‚Ì•Ç*/
+    /*å£ã®å ´æ‰€ã‚’å…¥ã‚Œã‚‹é…åˆ—*/
+        /*å·¦ã®å£*/
     public Transform[] leftWallPosition;
-        /*‰E‚Ì•Ç*/
+        /*å³ã®å£*/
     public Transform[] rightWallPosition;
 
-    /*¶‰E‚Ì•Ç‚Ì–‡”‚ğ‘€ì‚·‚é•Ï”*/
+    /*å·¦å³ã®å£ã®æšæ•°ã‚’æ“ä½œã™ã‚‹å¤‰æ•°*/
     public int min;
     public int max;
 
@@ -46,132 +46,132 @@ public class StageGenerator : MonoBehaviour
         stageChipSize = StageChipSizeTemp;
         generatedStageList = generatedStageListTemp;
 
-        /*0~ƒXƒe[ƒW‚Ì–‡”•ª‚¾‚¯ŒJ‚è•Ô‚·*/
+        /*0~ã‚¹ãƒ†ãƒ¼ã‚¸ã®æšæ•°åˆ†ã ã‘ç¹°ã‚Šè¿”ã™*/
         for(int i = 0; i < randomStageChips.Length; i++)
         {
-            /*ƒXƒe[ƒW‚Æ•Ç‚ğDirectionary‚È‚¢‚É‘Î‰‚³‚¹‚é*/
+            /*ã‚¹ãƒ†ãƒ¼ã‚¸ã¨å£ã‚’Directionaryãªã„ã«å¯¾å¿œã•ã›ã‚‹*/
             stageWallDictionary.Add(randomStageChips[i], stageWallChips[i]);
         }
 
-        /*ƒXƒe[ƒW‚ğÁ‚·‚©‚çÁ‚·‘O‚ÉˆêŒÂc‚·‚â‚Â*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’æ¶ˆã™ã‹ã‚‰æ¶ˆã™å‰ã«ä¸€å€‹æ®‹ã™ã‚„ã¤*/
         currentChipIndex = startChipIndex - 1;
         
-        /*preInstantiate‚Ì–‡”‚¾‚¯ƒXƒe[ƒW‚ğ¶¬*/
-            /*UpdateStageFw’è‚ÌIndex‚Ü‚Å‚ÌƒXƒe[ƒWƒ`ƒbƒv‚ğ¶¬‚µ‚ÄŠÇ—‰º‚É‚¨‚­©ìŠÖ”*/
-                /*ˆø”F¶¬‚·‚éƒXƒe[ƒW‚ÌIndex”Ô†*/
+        /*preInstantiateã®æšæ•°ã ã‘ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’ç”Ÿæˆ*/
+            /*UpdateStageï¼šæŒ‡å®šã®Indexã¾ã§ã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã‚’ç”Ÿæˆã—ã¦ç®¡ç†ä¸‹ã«ãŠãè‡ªä½œé–¢æ•°*/
+                /*å¼•æ•°ï¼šç”Ÿæˆã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®Indexç•ªå·*/
         UpdateStage(preInstantiate);
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*User‚ÌˆÊ’u‚©‚çŒ»İ‚ÌƒXƒe[ƒWƒ`ƒbƒv‚ÌƒCƒ“ƒfƒbƒNƒX‚ğŒvZ*/
+        /*Userã®ä½ç½®ã‹ã‚‰ç¾åœ¨ã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’è¨ˆç®—*/
         int userPositionIndex = (int)(UserController.user[0].position.z / stageChipSize);
 
-        /*Ÿ‚ÌƒXƒe[ƒWƒ`ƒbƒv‚É“ü‚Á‚½‚çƒXƒe[ƒWXVˆ—‚ğs‚¤*/
+        /*æ¬¡ã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã«å…¥ã£ãŸã‚‰ã‚¹ãƒ†ãƒ¼ã‚¸æ›´æ–°å‡¦ç†ã‚’è¡Œã†*/
         if (userPositionIndex + preInstantiate > currentChipIndex)
         {
-            /*charaPositionIndex+preInstantiate‚ğIndex”Ô†‚Æ‚µ‚ÄƒXƒe[ƒW‚ğ¶¬*/
-                /*UpdateStageFw’è‚ÌIndex‚Ü‚Å‚ÌƒXƒe[ƒWƒ`ƒbƒv‚ğ¶¬‚µ‚ÄŠÇ—‰º‚É‚¨‚­©ìŠÖ”*/
-                    /*ˆø”F¶¬‚·‚éƒXƒe[ƒW‚ÌIndex”Ô†*/
+            /*charaPositionIndex+preInstantiateã‚’Indexç•ªå·ã¨ã—ã¦ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’ç”Ÿæˆ*/
+                /*UpdateStageï¼šæŒ‡å®šã®Indexã¾ã§ã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã‚’ç”Ÿæˆã—ã¦ç®¡ç†ä¸‹ã«ãŠãè‡ªä½œé–¢æ•°*/
+                    /*å¼•æ•°ï¼šç”Ÿæˆã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®Indexç•ªå·*/
             UpdateStage(userPositionIndex + preInstantiate);
 
         }
 
-        /*ƒhƒA‚ğŠJ‚­ˆ—*/
-            /*OpenDoorFƒhƒA‚ğŠJ‚¯‚éˆ—‚ğs‚¤©ìŠÖ”*/
-                /*ˆø”FŠJ‚«‚½‚¢ƒhƒA‚ğ‚à‚Á‚Ä‚¢‚éGameObject*/
-                /*generatedStageList‚Ì‚R‚Â–Ú‚ÌƒhƒA‚ğŠJ‚¯‚é*/
+        /*ãƒ‰ã‚¢ã‚’é–‹ãå‡¦ç†*/
+            /*OpenDoorï¼šãƒ‰ã‚¢ã‚’é–‹ã‘ã‚‹å‡¦ç†ã‚’è¡Œã†è‡ªä½œé–¢æ•°*/
+                /*å¼•æ•°ï¼šé–‹ããŸã„ãƒ‰ã‚¢ã‚’ã‚‚ã£ã¦ã„ã‚‹GameObject*/
+                /*generatedStageListã®ï¼“ã¤ç›®ã®ãƒ‰ã‚¢ã‚’é–‹ã‘ã‚‹*/
         OpenDoor(generatedStageList[2]);
     }
 
-    /*w’è‚ÌIndex‚Ü‚Å‚ÌƒXƒe[ƒWƒ`ƒbƒv‚ğ¶¬‚µ‚ÄŠÇ—‰º‚É‚¨‚­*/
+    /*æŒ‡å®šã®Indexã¾ã§ã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã‚’ç”Ÿæˆã—ã¦ç®¡ç†ä¸‹ã«ãŠã*/
     void UpdateStage(int toChipIndex)
     {
-        /*w’è‚³‚ê‚½Index‚ªÀÛ‚ÌƒXƒe[ƒW‚Ì–‡”‚æ‚è­‚È‚¢ê‡‚Í‚»‚Ì‚Ü‚Ü•Ô‚·*/
+        /*æŒ‡å®šã•ã‚ŒãŸIndexãŒå®Ÿéš›ã®ã‚¹ãƒ†ãƒ¼ã‚¸ã®æšæ•°ã‚ˆã‚Šå°‘ãªã„å ´åˆã¯ãã®ã¾ã¾è¿”ã™*/
         if (toChipIndex <= currentChipIndex) return;
 
-        /*w’è‚ÌƒXƒe[ƒWƒ`ƒbƒv‚Ü‚Å‚ğ¶¬*/
+        /*æŒ‡å®šã®ã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã¾ã§ã‚’ç”Ÿæˆ*/
         for(int i = currentChipIndex + 1; i <= toChipIndex; i++)
         {
-            /*ƒ‰ƒ“ƒ_ƒ€‚ÈƒXƒe[ƒW‚ğ¶¬*/
-                /*GenerateStageFw’è‚ÌƒCƒ“ƒfƒbƒNƒXˆÊ’u‚ÉStageƒIƒuƒWƒFƒNƒg‚ğƒ‰ƒ“ƒ_ƒ€‚É¶¬‚·‚é©ìŠÖ”*/
-                    /*ˆø”FƒXƒe[ƒW‚ğ¶¬‚µ‚½‚¢êŠ‚ÌIndex”Ô†*/
+            /*ãƒ©ãƒ³ãƒ€ãƒ ãªã‚¹ãƒ†ãƒ¼ã‚¸ã‚’ç”Ÿæˆ*/
+                /*GenerateStageï¼šæŒ‡å®šã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ä½ç½®ã«Stageã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«ç”Ÿæˆã™ã‚‹è‡ªä½œé–¢æ•°*/
+                    /*å¼•æ•°ï¼šã‚¹ãƒ†ãƒ¼ã‚¸ã‚’ç”Ÿæˆã—ãŸã„å ´æ‰€ã®Indexç•ªå·*/
             GameObject stageObject = GenerateStage(i, min, max, stageWallDictionary, randomStageChips, stageChipSize, rightWallPosition, leftWallPosition);
 
-            /*¶¬‚µ‚½ƒXƒe[ƒWƒ`ƒbƒv‚ğŠÇ—ƒŠƒXƒg‚É’Ç‰Á*/
+            /*ç”Ÿæˆã—ãŸã‚¹ãƒ†ãƒ¼ã‚¸ãƒãƒƒãƒ—ã‚’ç®¡ç†ãƒªã‚¹ãƒˆã«è¿½åŠ */
             generatedStageList.Add(stageObject);
         }
 
-        /*ƒXƒe[ƒW•ÛãŒÀ“à‚É‚È‚é‚Ü‚ÅŒÃ‚¢ƒXƒe[ƒW‚ğíœ*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ä¿æŒä¸Šé™å†…ã«ãªã‚‹ã¾ã§å¤ã„ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å‰Šé™¤*/
         while (generatedStageList.Count > preInstantiate + 2) DestroyOldestStage(generatedStageList);
 
-        /*ÀÛ‚ÌƒXƒe[ƒW‚Ì–‡”‚ğ•ÏX*/
+        /*å®Ÿéš›ã®ã‚¹ãƒ†ãƒ¼ã‚¸ã®æšæ•°ã‚’å¤‰æ›´*/
         currentChipIndex = toChipIndex;
     }
 
-    /*w’è‚ÌƒCƒ“ƒfƒbƒNƒXˆÊ’u‚ÉStageƒIƒuƒWƒFƒNƒg‚ğƒ‰ƒ“ƒ_ƒ€‚É¶¬*/
+    /*æŒ‡å®šã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ä½ç½®ã«Stageã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«ç”Ÿæˆ*/
     public static GameObject GenerateStage(
         int chipIndex, int min, int max, Dictionary<GameObject, GameObject> wall, GameObject[] randomStageChips, 
         int StageChipSize, Transform[] rightWallPosition, Transform[] leftWallPosition
     )
     {
-        /*ƒXƒe[ƒW‚Ì–‡”‚Ì’†‚©‚çƒ‰ƒ“ƒ_ƒ€‚Å”š‚ğ¶¬*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ã®æšæ•°ã®ä¸­ã‹ã‚‰ãƒ©ãƒ³ãƒ€ãƒ ã§æ•°å­—ã‚’ç”Ÿæˆ*/
         int nextStageChip = Random.Range(0, randomStageChips.Length);
 
-        /*ƒ‰ƒ“ƒ_ƒ€‚Åw’è‚µ‚½ƒXƒe[ƒW‚ğw’è‚ÌêŠ‚É•¡»*/
+        /*ãƒ©ãƒ³ãƒ€ãƒ ã§æŒ‡å®šã—ãŸã‚¹ãƒ†ãƒ¼ã‚¸ã‚’æŒ‡å®šã®å ´æ‰€ã«è¤‡è£½*/
         GameObject stageObject = Instantiate(
-            /*¶¬‚·‚éƒXƒe[ƒW‚ÌƒvƒŒƒnƒu*/
+            /*ç”Ÿæˆã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®ãƒ—ãƒ¬ãƒãƒ–*/
             randomStageChips[nextStageChip],
-            /*¶¬‚·‚éƒXƒe[ƒW‚ÌêŠ*/
+            /*ç”Ÿæˆã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã®å ´æ‰€*/
             new Vector3(0, 0, chipIndex * StageChipSize),
-            /*‰ñ“]‚È‚µ‚Ìİ’è*/
+            /*å›è»¢ãªã—ã®è¨­å®š*/
             Quaternion.identity
         );
 
-        /*‰E‘¤‚Ì•Ç‚Ì–‡”‚ğƒ‰ƒ“ƒ_ƒ€‚Åw’è‚·‚é•Ï”*/
+        /*å³å´ã®å£ã®æšæ•°ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã§æŒ‡å®šã™ã‚‹å¤‰æ•°*/
         int rightWallNomber = Random.Range(min, max);
 
-        /*‰E‚Ì•Ç‚ğƒvƒŒƒnƒu‚Æ‚µ‚ÄƒXƒe[ƒW‚Ìq—v‘f‚É¶¬‚·‚é©ìŠÖ”*/
+        /*å³ã®å£ã‚’ãƒ—ãƒ¬ãƒãƒ–ã¨ã—ã¦ã‚¹ãƒ†ãƒ¼ã‚¸ã®å­è¦ç´ ã«ç”Ÿæˆã™ã‚‹è‡ªä½œé–¢æ•°*/
         PutWall(rightWallNomber, rightWallPosition.Length, rightWallPosition, chipIndex, wall, nextStageChip, stageObject, StageChipSize, randomStageChips);
         
-        /*¶‘¤‚Ì•Ç‚Ì–‡”‚ğƒ‰ƒ“ƒ_ƒ€‚Åw’è‚·‚é•Ï”*/
+        /*å·¦å´ã®å£ã®æšæ•°ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã§æŒ‡å®šã™ã‚‹å¤‰æ•°*/
         int leftWallNomber = Random.Range(min, max);
 
-        /*¶‚Ì•Ç‚ğƒvƒŒƒnƒu‚Æ‚µ‚ÄƒXƒe[ƒW‚Ìq—v‘f‚É¶¬‚·‚é©ìŠÖ”*/
+        /*å·¦ã®å£ã‚’ãƒ—ãƒ¬ãƒãƒ–ã¨ã—ã¦ã‚¹ãƒ†ãƒ¼ã‚¸ã®å­è¦ç´ ã«ç”Ÿæˆã™ã‚‹è‡ªä½œé–¢æ•°*/
         PutWall(leftWallNomber, leftWallPosition.Length, leftWallPosition, chipIndex, wall, nextStageChip, stageObject, StageChipSize, randomStageChips);
 
-        /*¶¬‚·‚éƒXƒe[ƒW‚ğ•Ô‚·*/
+        /*ç”Ÿæˆã™ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’è¿”ã™*/
         return stageObject;
     }
 
-    /*ˆê”ÔŒÃ‚¢ƒXƒe[ƒW‚ğíœ*/
+    /*ä¸€ç•ªå¤ã„ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å‰Šé™¤*/
     public static void DestroyOldestStage(List<GameObject> generatedStageList)
     {
-        /*ˆê”ÔŒÃ‚¢ƒXƒe[ƒW‚ğæ“¾*/
+        /*ä¸€ç•ªå¤ã„ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å–å¾—*/
         GameObject oldStage = generatedStageList[0];
         
-        /*ƒŠƒXƒg‚©‚çˆê”ÔŒÃ‚¢ƒXƒe[ƒW‚ğíœ*/
+        /*ãƒªã‚¹ãƒˆã‹ã‚‰ä¸€ç•ªå¤ã„ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å‰Šé™¤*/
         generatedStageList.RemoveAt(0);
         
-        /*‰æ–Ê‚©‚çˆê”ÔŒÃ‚¢ƒXƒe[ƒW‚ğíœ*/
+        /*ç”»é¢ã‹ã‚‰ä¸€ç•ªå¤ã„ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’å‰Šé™¤*/
         Destroy(oldStage);
     }
 
-    /*ƒhƒA‚ğŠJ‚¯‚éˆ—‚ğs‚¤©ìŠÖ”*/
-        /*ˆø”FŠJ‚­ƒhƒAŠJ‚«‚½‚¢ƒhƒA‚ğ‚à‚Á‚Ä‚¢‚éGameObject*/
+    /*ãƒ‰ã‚¢ã‚’é–‹ã‘ã‚‹å‡¦ç†ã‚’è¡Œã†è‡ªä½œé–¢æ•°*/
+        /*å¼•æ•°ï¼šé–‹ããƒ‰ã‚¢é–‹ããŸã„ãƒ‰ã‚¢ã‚’ã‚‚ã£ã¦ã„ã‚‹GameObject*/
     void OpenDoor(GameObject nextStage)
     {
-        /*ƒXƒe[ƒW‚ÌƒvƒŒƒnƒu‚ÌhÅ‰h‚Ìq—v‘f‚ÌhÅ‰‚Ìhq—v‘f‚ğƒXƒe[ƒW‚ÌhŸ‚Ìhq—v‘f‚ÌhÅ‰‚Ìhq—v‘f‚ÌˆÊ’u‚ÉüŒ`•âŠÔ‚ÅˆÚ“®‚·‚é*/
-        /*Right‘¤‚ÌƒhƒA‚ÌˆÚ“®*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ã®ãƒ—ãƒ¬ãƒãƒ–ã®â€æœ€åˆâ€ã®å­è¦ç´ ã®â€æœ€åˆã®â€å­è¦ç´ ã‚’ã‚¹ãƒ†ãƒ¼ã‚¸ã®â€æ¬¡ã®â€å­è¦ç´ ã®â€æœ€åˆã®â€å­è¦ç´ ã®ä½ç½®ã«ç·šå½¢è£œé–“ã§ç§»å‹•ã™ã‚‹*/
+        /*Rightå´ã®ãƒ‰ã‚¢ã®ç§»å‹•*/
         nextStage.transform.GetChild(0).GetChild(0).position = Vector3.Lerp(
             nextStage.transform.GetChild(0).GetChild(0).position,
             nextStage.transform.GetChild(1).GetChild(0).position,
             Time.deltaTime * speedDoor
         );
 
-        /*ƒXƒe[ƒW‚ÌƒvƒŒƒnƒu‚ÌhÅ‰h‚Ìq—v‘f‚ÌhŸ‚Ìhq—v‘f‚ğƒXƒe[ƒW‚ÌhŸ‚Ìhq—v‘f‚ÌhŸ‚Ìhq—v‘f‚ÌˆÊ’u‚ÉüŒ`•âŠÔ‚ÅˆÚ“®‚·‚é*/
-        /*Left‘¤‚ÌƒhƒA‚ÌˆÚ“®*/
+        /*ã‚¹ãƒ†ãƒ¼ã‚¸ã®ãƒ—ãƒ¬ãƒãƒ–ã®â€æœ€åˆâ€ã®å­è¦ç´ ã®â€æ¬¡ã®â€å­è¦ç´ ã‚’ã‚¹ãƒ†ãƒ¼ã‚¸ã®â€æ¬¡ã®â€å­è¦ç´ ã®â€æ¬¡ã®â€å­è¦ç´ ã®ä½ç½®ã«ç·šå½¢è£œé–“ã§ç§»å‹•ã™ã‚‹*/
+        /*Leftå´ã®ãƒ‰ã‚¢ã®ç§»å‹•*/
         nextStage.transform.GetChild(0).GetChild(1).position = Vector3.Lerp(
             nextStage.transform.GetChild(0).GetChild(1).position,
             nextStage.transform.GetChild(1).GetChild(1).position,
@@ -179,42 +179,43 @@ public class StageGenerator : MonoBehaviour
         );
     }
 
-    /*•Ç‚ÌƒvƒŒƒnƒu‚ğƒXƒe[ƒW‚Ìq—v‘f‚É¶¬‚·‚é©ìŠÖ”*/
+    /*å£ã®ãƒ—ãƒ¬ãƒãƒ–ã‚’ã‚¹ãƒ†ãƒ¼ã‚¸ã®å­è¦ç´ ã«ç”Ÿæˆã™ã‚‹è‡ªä½œé–¢æ•°*/
     public static void PutWall(
         int wallNomber, int wallPositionLength, Transform[] wallPosition, int chipIndex, Dictionary<GameObject, GameObject> wall, int nextStageChip, 
         GameObject stageObject, int StageChipSize, GameObject[] randomStageChips
     )
+    
     {
         for(int i = 0; i < wallNomber; i++)
         {
-            /*•Ç‚ÌêŠ‚Ì’†‚©‚ç‚Ç‚±‚É’u‚­‚©‚ğƒ‰ƒ“ƒ_ƒ€‚Å¶¬*/
+            /*å£ã®å ´æ‰€ã®ä¸­ã‹ã‚‰ã©ã“ã«ç½®ãã‹ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã§ç”Ÿæˆ*/
             int wallPositionIndex = Random.Range(0, wallPositionLength);
 
-            /*Z²‚ÌÀ•W‚ğƒXƒe[ƒW‚ÌƒTƒCƒY~(‰½–‡–Ú‚©{‚P)/(•Ç‚Ì–‡”{‚P)‚Åw’è*/
+            /*Zè»¸ã®åº§æ¨™ã‚’ã‚¹ãƒ†ãƒ¼ã‚¸ã®ã‚µã‚¤ã‚ºÃ—(ä½•æšç›®ã‹ï¼‹ï¼‘)/(å£ã®æšæ•°ï¼‹ï¼‘)ã§æŒ‡å®š*/
             float wallPositionZ = StageChipSize * (i + 1) / (wallNomber + 1);
 
-            /*wallObject‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‰»*/
+            /*wallObjectã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–*/
             GameObject[] wallObject = new GameObject[wallNomber];
 
-            /*i”Ô–Ú‚Ì•Ç‚ğƒvƒŒƒnƒu‚Æ‚µ‚Ä•¡»*/
+            /*iç•ªç›®ã®å£ã‚’ãƒ—ãƒ¬ãƒãƒ–ã¨ã—ã¦è¤‡è£½*/
             wallObject[i] = Instantiate(
-                /*•¡»‚·‚é‚à‚Ì*/
-                /*Œ»İ¶¬‚³‚ê‚Ä‚¢‚éƒXƒe[ƒW‚É‘Î‰‚·‚é•Ç‚ğDirectionary‚©‚ç*/
+                /*è¤‡è£½ã™ã‚‹ã‚‚ã®*/
+                /*ç¾åœ¨ç”Ÿæˆã•ã‚Œã¦ã„ã‚‹ã‚¹ãƒ†ãƒ¼ã‚¸ã«å¯¾å¿œã™ã‚‹å£ã‚’Directionaryã‹ã‚‰*/
                 wall[randomStageChips[nextStageChip]],
-                /*•¡»‚·‚éêŠ
-                /*V‚µ‚¢Vector3‚ğƒCƒ“ƒXƒ^ƒ“ƒX‰»*/
+                /*è¤‡è£½ã™ã‚‹å ´æ‰€
+                /*æ–°ã—ã„Vector3ã‚’ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–*/
                 new Vector3(
-                    /*•Ç‚ÌƒvƒŒƒnƒu‚©‚çƒ‰ƒ“ƒ_ƒ€‚Åw’è‚µ‚½êŠ‚ÌXÀ•W*/
+                    /*å£ã®ãƒ—ãƒ¬ãƒãƒ–ã‹ã‚‰ãƒ©ãƒ³ãƒ€ãƒ ã§æŒ‡å®šã—ãŸå ´æ‰€ã®Xåº§æ¨™*/
                     wallPosition[wallPositionIndex].position.x,
                     wallPosition[wallPositionIndex].position.y,
                     chipIndex * StageChipSize + wallPositionZ
                 ),
-                /*‰ñ“]*/
-                    /*•Ç‚ÌƒvƒŒƒnƒu‚©‚çƒ‰ƒ“ƒ_ƒ€‚Åw’è‚µ‚½êŠ‚Ì‰ñ“]*/
+                /*å›è»¢*/
+                    /*å£ã®ãƒ—ãƒ¬ãƒãƒ–ã‹ã‚‰ãƒ©ãƒ³ãƒ€ãƒ ã§æŒ‡å®šã—ãŸå ´æ‰€ã®å›è»¢*/
                 wallPosition[wallPositionIndex].rotation
             );
 
-            /*•Ç‚ÌƒIƒuƒWƒFƒNƒg‚ğƒXƒe[ƒW‚Ìq—v‘f‚É‚·‚é*/
+            /*å£ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ã‚¹ãƒ†ãƒ¼ã‚¸ã®å­è¦ç´ ã«ã™ã‚‹*/
             wallObject[i].transform.parent = stageObject.transform;
         }
     }

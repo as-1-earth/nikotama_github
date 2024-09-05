@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class LeftUserController : MonoBehaviour
 {
-    /*‰E‘¤‚Ìƒ{[ƒ‹‚ğ‚·‚×‚Ä”z—ñ‚Åæ“¾*/
+    /*å³å´ã®ãƒœãƒ¼ãƒ«ã‚’ã™ã¹ã¦é…åˆ—ã§å–å¾—*/
     [SerializeField]
     private Transform[] leftBallTemp;
     public static Transform[] leftBall;
 
-    /*ƒŒ[ƒ“ŠÖ˜A‚Ì’l*/
-    /*ƒŒ[ƒ“‚ÌˆÚ“®ƒXƒs[ƒh*/
+    /*ãƒ¬ãƒ¼ãƒ³é–¢é€£ã®å€¤*/
+    /*ãƒ¬ãƒ¼ãƒ³ã®ç§»å‹•ã‚¹ãƒ”ãƒ¼ãƒ‰*/
     public float speedLane;
 
     // Start is called before the first frame update
@@ -22,91 +22,91 @@ public class LeftUserController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*‰æ–Ê‚ğƒ^ƒbƒ`‚³‚ê‚½‚Ìˆ—*/
-        /*0`‰æ–Ê‚ğƒ^ƒbƒ`‚³‚ê‚Ä‚éw‚Ì–{”•ªŒJ‚è•Ô‚·*/
+        /*ç”»é¢ã‚’ã‚¿ãƒƒãƒã•ã‚ŒãŸæ™‚ã®å‡¦ç†*/
+        /*0ï½ç”»é¢ã‚’ã‚¿ãƒƒãƒã•ã‚Œã¦ã‚‹æŒ‡ã®æœ¬æ•°åˆ†ç¹°ã‚Šè¿”ã™*/
         for (int i = 0; i < Input.touchCount; i++)
         {
-            /*‚à‚µ‰æ–Ê‚Ì‰E‘¤‚ğƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚é‚È‚ç*/
+            /*ã‚‚ã—ç”»é¢ã®å³å´ã‚’ã‚¿ãƒƒãƒã•ã‚Œã¦ã„ã‚‹ãªã‚‰*/
             if (Input.touches[i].position.x < Screen.width / 2)
             {
-                /*User‚ÌPosition‚ğ©ì‚ÌUserTouchPositionŠÖ”‚ğ—p‚¢‚ÄŒvZ*/
-                /*UserTouchPositionFƒ^ƒbƒ`‚³‚ê‚½êŠ‚©‚çUser‚ÌPosition‚ğŒvZ‚·‚éŠÖ”*/
-                /*ˆø”Fƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚éw‚ÌVector3, ˆÚ“®‚Ì‘¬‚³, ‚·‚×‚Ä‚Ìƒ{[ƒ‹‚ª“ü‚Á‚Ä‚¢‚é”z—ñ‚ÌTransform, User‚ÌTransform*/
+                /*Userã®Positionã‚’è‡ªä½œã®UserTouchPositioné–¢æ•°ã‚’ç”¨ã„ã¦è¨ˆç®—*/
+                /*UserTouchPositionï¼šã‚¿ãƒƒãƒã•ã‚ŒãŸå ´æ‰€ã‹ã‚‰Userã®Positionã‚’è¨ˆç®—ã™ã‚‹é–¢æ•°*/
+                /*å¼•æ•°ï¼šã‚¿ãƒƒãƒã•ã‚Œã¦ã„ã‚‹æŒ‡ã®Vector3, ç§»å‹•ã®é€Ÿã•, ã™ã¹ã¦ã®ãƒœãƒ¼ãƒ«ãŒå…¥ã£ã¦ã„ã‚‹é…åˆ—ã®Transform, Userã®Transform*/
                 transform.position = UserController.UserTouchPosition(Input.touches[i].position, leftBall, transform);
             }
         }
 
-        /*‚à‚µUser‚ª•Ç‚ÉÕ“Ë‚µ‚Ä‚¢‚È‚¯‚ê‚Î*/
+        /*ã‚‚ã—UserãŒå£ã«è¡çªã—ã¦ã„ãªã‘ã‚Œã°*/
         if (!UserController.userStop)
         {
-            /*ã–îˆó‚ğ“ü—Í‚³‚ê‚½*/
+            /*ä¸ŠçŸ¢å°ã‚’å…¥åŠ›ã•ã‚ŒãŸæ™‚*/
             if (Input.GetKey(KeyCode.W))
             {
-                /*userPosition‚ğuser‚ÌPosition‚ğ“ü‚ê‚Ä¶¬*/
+                /*userPositionã‚’userã®Positionã‚’å…¥ã‚Œã¦ç”Ÿæˆ*/
                 Vector3 userPosition = transform.position;
 
-                /*target‚Æ‚µ‚ÄŒ»İ‚ÌˆÊ’u‚ÉƒXƒs[ƒh‚ğ‘«‚µ‡‚í‚¹‚½’l‚ğ•Ï”‚Æ‚µ‚Ä¶¬*/
+                /*targetã¨ã—ã¦ç¾åœ¨ã®ä½ç½®ã«ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’è¶³ã—åˆã‚ã›ãŸå€¤ã‚’å¤‰æ•°ã¨ã—ã¦ç”Ÿæˆ*/
                 float target = transform.position.y + speedLane;
 
-                /*user‚ÌY²‚ÌPosition‚ğã‚Æ‰º‚ÌãŒÀ‚ğİ’è*/
+                /*userã®Yè»¸ã®Positionã‚’ä¸Šã¨ä¸‹ã®ä¸Šé™ã‚’è¨­å®š*/
                 userPosition.y = Mathf.Clamp(target, leftBall[0].position.y, leftBall[2].position.y);
 
-                /*x=a*y^2+q‚Ì“ñŸŠÖ”‚Æ‚µ‚Äa‚Æq‚ªˆÈ‰º‚Ì’è”*/
+                /*x=a*y^2+qã®äºŒæ¬¡é–¢æ•°ã¨ã—ã¦aã¨qãŒä»¥ä¸‹ã®å®šæ•°*/
                 const float a = 1.85f / 10.24f;
                 const float q = 3.7f;
 
-                /*user‚ÌX²‚ÌPosition‚ğŒvZ*/
+                /*userã®Xè»¸ã®Positionã‚’è¨ˆç®—*/
                 userPosition.x = a * Mathf.Pow(userPosition.y, 2) - q;
 
-                /*ŒvZ‚µ‚½À•W‚ğtransform‚ÌPosition‚É“ü‚ê‚é*/
+                /*è¨ˆç®—ã—ãŸåº§æ¨™ã‚’transformã®Positionã«å…¥ã‚Œã‚‹*/
                 transform.position = new Vector3(userPosition.x, userPosition.y, userPosition.z);
             }
 
-            /*‰º–îˆó‚ğ“ü—Í‚³‚ê‚½*/
+            /*ä¸‹çŸ¢å°ã‚’å…¥åŠ›ã•ã‚ŒãŸæ™‚*/
             if (Input.GetKey(KeyCode.S))
             {
-                /*userPosition‚ğuser‚ÌPosition‚ğ“ü‚ê‚Ä¶¬*/
+                /*userPositionã‚’userã®Positionã‚’å…¥ã‚Œã¦ç”Ÿæˆ*/
                 Vector3 userPosition = transform.position;
 
-                /*target‚Æ‚µ‚ÄŒ»İ‚ÌˆÊ’u‚ÉƒXƒs[ƒh‚ğ‘«‚µ‡‚í‚¹‚½’l‚ğ•Ï”‚Æ‚µ‚Ä¶¬*/
+                /*targetã¨ã—ã¦ç¾åœ¨ã®ä½ç½®ã«ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’è¶³ã—åˆã‚ã›ãŸå€¤ã‚’å¤‰æ•°ã¨ã—ã¦ç”Ÿæˆ*/
                 float target = transform.position.y - speedLane;
 
-                /*user‚ÌY²‚ÌPosition‚ğã‚Æ‰º‚ÌãŒÀ‚ğİ’è*/
+                /*userã®Yè»¸ã®Positionã‚’ä¸Šã¨ä¸‹ã®ä¸Šé™ã‚’è¨­å®š*/
                 userPosition.y = Mathf.Clamp(target, leftBall[0].position.y, leftBall[2].position.y);
 
-                /*x=a*y^2+q‚Ì“ñŸŠÖ”‚Æ‚µ‚Äa‚Æq‚ªˆÈ‰º‚Ì’è”*/
+                /*x=a*y^2+qã®äºŒæ¬¡é–¢æ•°ã¨ã—ã¦aã¨qãŒä»¥ä¸‹ã®å®šæ•°*/
                 const float a = 1.85f / 10.24f;
                 const float q = 3.7f;
 
-                /*user‚ÌX²‚ÌPosition‚ğŒvZ*/
+                /*userã®Xè»¸ã®Positionã‚’è¨ˆç®—*/
                 userPosition.x = a * Mathf.Pow(userPosition.y, 2) - q;
 
-                /*ŒvZ‚µ‚½À•W‚ğtransform‚ÌPosition‚É“ü‚ê‚é*/
+                /*è¨ˆç®—ã—ãŸåº§æ¨™ã‚’transformã®Positionã«å…¥ã‚Œã‚‹*/
                 transform.position = new Vector3(userPosition.x, userPosition.y, userPosition.z);
             }
         }
     
-        /*‚à‚µUser‚ª•Ç‚É“–‚½‚Á‚Ä‚¢‚È‚¯‚ê‚ÎZ²‚ği‚ß‚é*/
+        /*ã‚‚ã—UserãŒå£ã«å½“ãŸã£ã¦ã„ãªã‘ã‚Œã°Zè»¸ã‚’é€²ã‚ã‚‹*/
         if (!UserController.userStop)
         {
             /*
-             ‚±‚±
+             ã“ã“
              transform.position.z += ( Time.deltaTime * UserController.userSpeedZ);
-             ‚Å—Ç‚­‚È‚¢‚·‚©
+             ã§è‰¯ããªã„ã™ã‹
              */
             transform.position = new Vector3(
                 x: transform.position.x,
                 y: transform.position.y,
                 z: transform.position.z + ( Time.deltaTime * UserController.userSpeedZ)
-            );;
+            );
         }
     }
 
-    /*User‚ªWall‚É“–‚½‚Á‚½‚Ìˆ—*/
+    /*UserãŒWallã«å½“ãŸã£ãŸæ™‚ã®å‡¦ç†*/
     private void OnTriggerEnter(Collider wall)
     {
-        /*‚à‚µWallƒ^ƒO‚ÌTrigger‚É“–‚½‚Á‚½‚ç~‚Ü‚é*/
-            /*userStopFuser‚ª~‚Ü‚Á‚½true‚É‚È‚éboolŒ^•Ï”*/
+        /*ã‚‚ã—Wallã‚¿ã‚°ã®Triggerã«å½“ãŸã£ãŸã‚‰æ­¢ã¾ã‚‹*/
+            /*userStopï¼šuserãŒæ­¢ã¾ã£ãŸæ™‚trueã«ãªã‚‹boolå‹å¤‰æ•°*/
         if (wall.CompareTag("Wall")) UserController.userStop = true;
     }
 }

@@ -24,6 +24,9 @@ public class UserController : MonoBehaviour
 
     bool speedUpCheck = true;
 
+    
+    
+
 /*    [SerializeField] GetPlayerCombinedInfoRequestParams InfoRequestParams;*/
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,7 @@ public class UserController : MonoBehaviour
         /*userをInspecter上で操作できるようにするための操作*/
         user = userTemp;
 
+        userSpeedZ = 1;
         /*userSpeedZの値をSpeedZに記憶させる*/
         userSpeedZ = PlayerPrefs.GetInt("SpeedZ");
 
@@ -60,7 +64,6 @@ public class UserController : MonoBehaviour
         }*/
         if (Mathf.CeilToInt(user[0].position.z) % (StageGenerator.stageChipSize * (Mathf.CeilToInt(userSpeedZ / 10))) >= (StageGenerator.stageChipSize * ((Mathf.CeilToInt(userSpeedZ / 10))) - 10)/* && userSpeedZ >= 30*/)
         {
-            if (speedUpCheck)
             if (speedUpCheck)
             {
                 userSpeedZ++;

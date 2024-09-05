@@ -20,10 +20,10 @@ public class RestartController : MonoBehaviour
     {
         UserController.userStop = false;
 
-        /*ƒAƒNƒeƒBƒuİ’è‚ÌØ‚è‘Ö‚¦*/
-        /*UserUI‚ğ”ñƒAƒNƒeƒBƒu‰»*/
+        /*ã‚¢ã‚¯ãƒ†ã‚£ãƒ–è¨­å®šã®åˆ‡ã‚Šæ›¿ãˆ*/
+        /*UserUIã‚’éã‚¢ã‚¯ãƒ†ã‚£ãƒ–åŒ–*/
         UIController.UserUI.SetActive(true);
-        /*ResultUI‚ğƒAƒNƒeƒBƒu‰»*/
+        /*ResultUIã‚’ã‚¢ã‚¯ãƒ†ã‚£ãƒ–åŒ–*/
         UIController.ResultUI.SetActive(false);
 
         UserController.user[0].position = new Vector3(

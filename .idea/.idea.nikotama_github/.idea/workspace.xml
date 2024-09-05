@@ -5,9 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="370b11cf-0780-4abf-8e4d-4eb66ac67d5f" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/shelf/2024_02_18_16_44______.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/shelf/2024_02_18_16_44______.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nikotama_github/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Casual UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Casual UI/Sprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Casual UI/Sprite/GUI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Casual UI/Sprite/GUI.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/1. Track 1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/1. Track 1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/10. Track 10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/10. Track 10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/2. Track 2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/2. Track 2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/7. Track 7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/7. Track 7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/9. Track 9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/9. Track 9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/8Bit Music - 062022/Notes.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Stages/DefaultDodecagonStage/DodecagonStageNomal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Stages/DefaultDodecagonStage/DodecagonStageNomal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Walls/Left/BallCourse/LeftWall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Walls/Left/BallCourse/LeftWall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Walls/Left/BallCourse/UnderLeftWall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Prefabs/Walls/Left/BallCourse/UnderLeftWall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/FirstDisplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scenes/Game/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/LeftUserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/LeftUserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/RestartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/StageGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/StageGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/TitleUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TwoBalls/Scripts/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +113,7 @@
 }</component>
   <component name="RunManager" selected="Unity エディターにアタッチ.Unity エディターにアタッチ">
     <configuration name="ユニットテスト (バッチモード)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.1.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Unity\nikotama_github -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Unity\nikotama_github" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -97,7 +129,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unity の起動" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.1.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Unity\nikotama_github -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Unity\nikotama_github" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -140,6 +172,14 @@
       <workItem from="1708291129928" duration="1896000" />
       <workItem from="1708356651410" duration="1203000" />
       <workItem from="1708363428137" duration="1298000" />
+      <workItem from="1713535673510" duration="194000" />
+      <workItem from="1713536164835" duration="5083000" />
+      <workItem from="1714308711992" duration="1207000" />
+      <workItem from="1714729600328" duration="2402000" />
+      <workItem from="1714737026082" duration="2538000" />
+      <workItem from="1715341660814" duration="6965000" />
+      <workItem from="1716502475829" duration="3526000" />
+      <workItem from="1722298775511" duration="940000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -325,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708280926444</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="バージョン変更">
+      <option name="closed" value="true" />
+      <created>1708464514242</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1708464514242</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="a" />
     <MESSAGE value="a2ws" />
     <MESSAGE value="うｙｔｆｒ" />
     <MESSAGE value="あｄｓｆｒｇｔｈ" />
@@ -399,7 +446,8 @@
     <MESSAGE value="最初の画面のにこたまを作成" />
     <MESSAGE value="Restart完成" />
     <MESSAGE value="Bildしたい" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bildしたい" />
+    <MESSAGE value="バージョン変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="バージョン変更" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

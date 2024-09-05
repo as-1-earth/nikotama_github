@@ -4,32 +4,32 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    /*ƒJƒƒ‰‚Ì‹——£‚ğæ“¾*/
+    /*ã‚«ãƒ¡ãƒ©ã®è·é›¢ã‚’å–å¾—*/
     public int cameraDistans;
 
     // Update is called once per frame
     void Update()
     {
-        /*ƒJƒƒ‰‚ÌˆÊ’u‚ğw’è(*/
+        /*ã‚«ãƒ¡ãƒ©ã®ä½ç½®ã‚’æŒ‡å®š(*/
         transform.position = CameraPosition(
-            /*ƒJƒƒ‰©g‚ÌˆÊ’u, ‘ÎÛ‚ÌUser‚ÌˆÊ’u, ƒJƒƒ‰‚ÆUser‚Ì‹——£*/
+            /*ã‚«ãƒ¡ãƒ©è‡ªèº«ã®ä½ç½®, å¯¾è±¡ã®Userã®ä½ç½®, ã‚«ãƒ¡ãƒ©ã¨Userã®è·é›¢*/
             transform, UserController.user[0], cameraDistans
         );
     }
 
-    /*ƒJƒƒ‰‚ÌPosition‚ğŠÖ”‚ÅŒvZ*/
+    /*ã‚«ãƒ¡ãƒ©ã®Positionã‚’é–¢æ•°ã§è¨ˆç®—*/
     public static Vector3 CameraPosition(
-        /*ˆø”FƒJƒƒ‰©g‚ÌTransform, B‰e‚·‚étarget‚ÌTransform, ƒJƒƒ‰‚Ætarget‚Ì‹——£*/
+        /*å¼•æ•°ï¼šã‚«ãƒ¡ãƒ©è‡ªèº«ã®Transform, æ’®å½±ã™ã‚‹targetã®Transform, ã‚«ãƒ¡ãƒ©ã¨targetã®è·é›¢*/
         Transform camera, Transform targetBall, int cameraDistans
     )
     {
-        /*camera‚ÌPosition‚ğ‰Šú‰»*/
+        /*cameraã®Positionã‚’åˆæœŸåŒ–*/
         Vector3 cameraPosition = Vector3.zero;
 
-        /*camera‚ÌZ²‚Étarget‚ÌZ²‚©‚çˆø”‚Ì‹——£‚ğˆø‚¢‚½‚à‚Ì‚ğ‘ã“ü*/
+        /*cameraã®Zè»¸ã«targetã®Zè»¸ã‹ã‚‰å¼•æ•°ã®è·é›¢ã‚’å¼•ã„ãŸã‚‚ã®ã‚’ä»£å…¥*/
         cameraPosition.z = targetBall.position.z - cameraDistans;
 
-        /*camera‚ÌPosition‚ğ•Ô‚·*/
+        /*cameraã®Positionã‚’è¿”ã™*/
         return cameraPosition;
     }
 }
